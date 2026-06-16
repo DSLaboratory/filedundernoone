@@ -117,6 +117,31 @@ img{display:block;max-width:100%}
 .cta{display:inline-block;margin-top:30px;padding:15px 30px;border:1px solid var(--signal);color:var(--signal);
   font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.95rem;border-radius:2px;transition:.25s}
 .cta:hover{background:var(--signal);color:#0a0a0a;box-shadow:0 0 30px rgba(255,195,31,.35)}
+/* ── THE BOOK (read free / buy) ── */
+.book{padding:13vh 0;border-top:1px solid var(--line);background:radial-gradient(120% 80% at 50% 0,#0a1120,var(--void) 72%)}
+.book-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:60px;align-items:center}
+.bookcover img{width:100%;max-width:330px;height:auto;display:block;margin:0 auto;border-radius:2px;
+  box-shadow:0 44px 74px rgba(0,0,0,.62),0 6px 16px rgba(0,0,0,.42)}
+.bookoffer .kick{color:var(--steel-ink)}
+.bookoffer h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.6rem,3.6vw,2.5rem);
+  color:var(--ink);line-height:1.04;letter-spacing:-.01em;margin:14px 0 0}
+.bookoffer p{color:#bcc6d6;font-size:1.05rem;max-width:44ch;margin-top:16px;line-height:1.62}
+.buy{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;align-items:center}
+.buy .btn{font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.85rem;
+  padding:15px 26px;border-radius:2px;border:1px solid var(--line);display:inline-flex;align-items:center;gap:9px;
+  transition:.25s;text-decoration:none}
+.buy .btn.read{background:var(--signal);color:#0a0a0a;border-color:var(--signal)}
+.buy .btn.read:hover{box-shadow:0 0 30px rgba(255,195,31,.35)}
+.buy .btn.soon{color:var(--meta);cursor:not-allowed}
+.buy .btn.soon .s{font-family:'Registry';font-weight:600;font-size:.6rem;letter-spacing:.14em;color:var(--signal)}
+.bookoffer .note{font-family:'Registry';font-size:.76rem;letter-spacing:.18em;color:var(--meta);margin-top:24px;text-transform:uppercase}
+/* ── READ-THE-BOOK CTA ── */
+.readcta{padding:14vh 0;text-align:center;border-top:1px solid var(--line);background:radial-gradient(120% 80% at 50% 28%,#0a1120,var(--void) 72%)}
+.readcta .kick{color:var(--steel-ink)}
+.readcta h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,4.4vw,2.8rem);color:var(--ink);line-height:1.02;letter-spacing:-.01em;margin:18px auto 0;max-width:18ch}
+.readcta p{max-width:46ch;margin:18px auto 0;color:var(--ink2);font-size:1.05rem;line-height:1.6}
+.readcta .cta{margin-top:34px}
+.readcta .sub{font-family:'Registry';font-size:.74rem;letter-spacing:.16em;color:var(--meta);margin-top:22px;text-transform:uppercase}
 /* ── STATUS + FOOTER ── */
 .status{padding:14vh 0;text-align:center;border-top:1px solid var(--line)}
 .status .stamp{font-size:.9rem;padding:.5em 1em}
@@ -135,6 +160,7 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
   .ev.wide,.ev.tall,.ev.half,.ev.third{grid-column:span 2;grid-row:span 1}
   .ev img{aspect-ratio:16/10}
   .lead-grid{grid-template-columns:1fr;gap:30px}
+  .book-grid{grid-template-columns:1fr;gap:34px} .bookcover img{max-width:250px}
   .lead{padding:12vh 0} .game .bg::after{background:linear-gradient(180deg,rgba(4,6,11,.4),rgba(4,6,11,.95))}
 }
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -171,7 +197,9 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
       "author": { "@id": "https://dslaboratory.uk/#org" },
       "publisher": { "@id": "https://dslaboratory.uk/#org" },
       "abstract": "For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see — then found a ledger that files the living as dead. She reported it. By morning she had never existed.",
-      "description": "A novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp. Coming in paperback and e-book."
+      "description": "A novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp. Free to read online; coming in paperback and e-book.",
+      "isAccessibleForFree": true,
+      "potentialAction": { "@type": "ReadAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://filedundernoone.uk/book/" } }
     },
     {
       "@type": "VideoGame",
@@ -213,6 +241,22 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
   <figure class="lead-fig"><img width="800" height="1200" loading="lazy" decoding="async" src="./img/figure-keyart.png" alt="A faceless figure standing in a shaft of amber light."></figure>
 </div></section>
 
+<!-- THE BOOK -->
+<section class="book"><div class="wrap reveal book-grid">
+  <div class="bookcover"><img src="./img/cover.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="The cover of Filed Under No One — a woman seen from behind on a wet London street, photographed from inside a car."></div>
+  <div class="bookoffer">
+    <div class="kick">The novel</div>
+    <h2>Read the whole book, free.</h2>
+    <p>Filed Under No One is free to read online, in full — and coming in paperback and e-book. No list to join, nothing to buy yet; when it's ready to own, it will be here.</p>
+    <div class="buy">
+      <a class="btn read" href="/book/">Read free online →</a>
+      <span class="btn soon" aria-disabled="true">Paperback <span class="s">coming soon</span></span>
+      <span class="btn soon" aria-disabled="true">E-book <span class="s">coming soon</span></span>
+    </div>
+    <div class="note">Coming · MMXXVI</div>
+  </div>
+</div></section>
+
 <!-- THE FILE -->
 <section class="file"><div class="wrap">
   <div class="sechead reveal"><h2>What the record says</h2><span class="kick">PF 604584 · Vol. II</span></div>
@@ -249,6 +293,15 @@ ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
   <p class="filemeta reveal">She is the keeper of files, herself filed and shut. <span class="sig">Filed under no one.</span></p>
 </div></section>
 
+<!-- READ THE BOOK -->
+<section class="readcta"><div class="wrap reveal">
+  <div class="kick">The record is only the surface</div>
+  <h2>Read the whole book.</h2>
+  <p>Free, online, in full — what the file says, and everything it was built to leave out. Margaret Vane's story, end to end.</p>
+  <a class="cta" href="/book/">Read free online →</a>
+  <div class="sub">Free to read · paperback &amp; e-book coming MMXXVI</div>
+</div></section>
+
 <!-- GAME -->
 <section class="game">
   <div class="bg"><img width="1066" height="1600" loading="lazy" decoding="async" src="./img/game.jpg" alt="A vast records corridor at night."></div>
@@ -260,12 +313,6 @@ ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
   </div>
 </section>
 
-<!-- STATUS -->
-<section class="status"><div class="wrap reveal">
-  <span class="stamp">Coming · MMXXVI</span>
-  <p class="kick" style="margin-top:16px;color:var(--steel-ink)">In paperback and e-book</p>
-  <p>Not yet filed. The book is finished and on its way — no list to join, nothing to buy yet. When it's ready, it will be here.</p>
-</div></section>
 </main>
 
 <!-- FOOTER -->
