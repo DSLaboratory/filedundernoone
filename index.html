@@ -64,7 +64,16 @@ img{display:block;max-width:100%}
 .ev figcaption{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;font-family:'Registry';font-size:9px;letter-spacing:.08em;color:var(--ink2);
   background:linear-gradient(0deg,rgba(4,6,11,.92),transparent);text-transform:uppercase}
 .ev.wide{grid-column:span 4} .ev.tall{grid-column:span 2;grid-row:span 2}
-.ev.half{grid-column:span 2} .ev.third{grid-column:span 2}
+.ev.half{grid-column:span 3} .ev.third{grid-column:span 2}
+/* lead two-column + the faceless figure */
+.lead-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.lead-fig img{width:100%;border-radius:6px;filter:saturate(.9) contrast(1.03);
+  -webkit-mask:radial-gradient(86% 94% at 56% 46%,#000 58%,transparent 97%);mask:radial-gradient(86% 94% at 56% 46%,#000 58%,transparent 97%)}
+/* the file's own voice — a typed watcher excerpt */
+.excerpt{margin:6px 0 50px;max-width:760px;background:linear-gradient(180deg,#0c1322,#090d18);border:1px solid var(--line);border-left:3px solid rgba(255,195,31,.45);border-radius:6px;padding:24px 30px}
+.excerpt pre{font-family:'Registry';font-size:clamp(11px,1.4vw,13.5px);line-height:1.75;color:#cdd6e6;white-space:pre-wrap;margin:12px 0}
+.filehead{display:block;margin:48px 0 20px;color:var(--steel-ink);border-bottom:1px solid var(--line);padding-bottom:9px}
+.filemeta{margin-top:44px;font-size:clamp(1.1rem,2.1vw,1.35rem);color:#cbd4e3;max-width:42ch;line-height:1.5;font-weight:500}
 /* ── GAME ── */
 .game{position:relative;min-height:78vh;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line)}
 .game .bg{position:absolute;inset:0;z-index:0}
@@ -93,6 +102,7 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
   .grid{grid-template-columns:repeat(2,1fr)}
   .ev.wide,.ev.tall,.ev.half,.ev.third{grid-column:span 2;grid-row:span 1}
   .ev img{aspect-ratio:16/10}
+  .lead-grid{grid-template-columns:1fr;gap:30px}
   .lead{padding:12vh 0} .game .bg::after{background:linear-gradient(180deg,rgba(4,6,11,.4),rgba(4,6,11,.95))}
 }
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
@@ -113,21 +123,45 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
 </header>
 
 <!-- LEAD -->
-<section class="lead"><div class="wrap reveal">
+<section class="lead"><div class="wrap reveal lead-grid">
   <p>For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see. She was good at it. Then she opened a ledger she was meant to file and not read — and found it was quietly killing the living by writing them down as dead. She did the correct thing. She reported it. <span class="last">By morning she had never existed.</span></p>
+  <figure class="lead-fig"><img src="./img/figure.jpg" alt="A faceless figure emerging from the dark under a shaft of amber light."></figure>
 </div></section>
 
 <!-- THE FILE -->
 <section class="file"><div class="wrap">
-  <div class="sechead reveal"><h2>What the record says</h2><span class="kick">PF 604584 · Struck</span></div>
+  <div class="sechead reveal"><h2>What the record says</h2><span class="kick">PF 604584 · Vol. II</span></div>
   <p class="about reveal">Margaret Vane spent eleven years at the Registry deciding what the country was allowed to see — the watcher who chose the blind spots, posted the guards, aimed the lights. When she finds a ledger that files the living as dead and reports it, she is struck from every register that ever held her. For eleven weeks she is no one. Then she goes back in — past her own guards, through her own blind spots — to take back the proof that she was real.</p>
-  <div class="grid reveal">
-    <figure class="ev wide"><img src="./img/contact.jpg" alt="A surveillance contact sheet of the subject."><figcaption>Observation — subject · B.5. F.153/17</figcaption></figure>
-    <figure class="ev tall"><img src="./img/jacket.jpg" alt="A worn buff personal-file cover."><figcaption>Personal File — PF 604584 · Vane, Margaret</figcaption></figure>
-    <figure class="ev third"><img src="./img/struck.jpg" alt="A registry index card stamped STRUCK OFF."><figcaption>Struck off — 14.3.74</figcaption></figure>
-    <figure class="ev third"><img src="./img/redaction.jpg" alt="A document redacted with an amber wash, text ghosting through."><figcaption>Retained — § 3(4)</figcaption></figure>
-    <figure class="ev half"><img src="./img/overwrite.jpg" alt="A typed line corrected by hand."><figcaption>Minute — s/n 492-B</figcaption></figure>
+
+  <div class="excerpt reveal">
+    <div class="kick">Observation Report · B.5 · F.153/22</div>
+    <pre>0907   SUBJECT left place of employment.
+0914   SUBJECT at bus stop, Stop C; read timetable.
+0958   SUBJECT entered the public library; remained until 1105 hrs.
+1112   purchased nothing of note.
+
+ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
+    <div class="kick" style="text-align:right">— signed in blue-black ink</div>
   </div>
+
+  <span class="kick filehead reveal">i · The watching</span>
+  <div class="grid reveal">
+    <figure class="ev wide"><img src="./img/contact.jpg" alt="A surveillance contact sheet of the subject."><figcaption>Observation — subject, p.m. · F.153/17</figcaption></figure>
+    <figure class="ev third"><img src="./img/surv-bus.jpg" alt="A surveillance frame at a bus stop."><figcaption>Stop C · 17.46 · withdrawn as ordered</figcaption></figure>
+  </div>
+
+  <span class="kick filehead reveal">ii · The unmaking</span>
+  <div class="grid reveal">
+    <figure class="ev third"><img src="./img/struck.jpg" alt="An index card stamped STRUCK OFF."><figcaption>Struck off — 14.3.74</figcaption></figure>
+    <figure class="ev third"><img src="./img/redaction.jpg" alt="A document redacted with an amber wash, text ghosting through."><figcaption>Retained — § 3(4)</figcaption></figure>
+    <figure class="ev third"><img src="./img/wtwin.jpg" alt="A file marked with a red W beside a too-clean twin."><figcaption>Watch — and the twin that hid the gap</figcaption></figure>
+    <figure class="ev third"><img src="./img/jacket.jpg" alt="A worn buff personal-file cover."><figcaption>Personal File — PF 604584 · Vane, M.</figcaption></figure>
+    <figure class="ev third"><img src="./img/absence.jpg" alt="An almost-blank leaf bearing only a serial number."><figcaption>Substitution leaf — only a number left</figcaption></figure>
+    <figure class="ev third"><img src="./img/verso.jpg" alt="The back of a photograph, bearing only a file number."><figcaption>Verso — PF 604584, no name</figcaption></figure>
+    <figure class="ev" style="grid-column:1/-1"><img src="./img/overwrite.jpg" alt="A typed line, 'I think he has told me the truth', corrected by hand to 'He had not.'"><figcaption>Minute — &ldquo;I think he has told me the truth.&rdquo; · later, another hand: &ldquo;He had not.&rdquo;</figcaption></figure>
+  </div>
+
+  <p class="filemeta reveal">She is the keeper of files, herself filed and shut. <span class="sig">Filed under no one.</span></p>
 </div></section>
 
 <!-- GAME -->
