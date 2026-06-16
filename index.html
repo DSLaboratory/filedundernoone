@@ -5,11 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Filed Under No One — a novel</title>
 <meta name="description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread in the le Carré tradition. Coming in paperback and e-book. Play the companion stealth game now.">
-<meta property="og:title" content="Filed Under No One">
-<meta property="og:description" content="She kept the country's secrets. The country kept one — about her. A novel, coming in paperback and e-book. The companion stealth game is live now.">
-<meta property="og:image" content="./img/hero.jpg">
+<link rel="canonical" href="https://filedundernoone.uk/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="DS Laboratory">
+
+<!-- Open Graph -->
 <meta property="og:type" content="book">
+<meta property="og:site_name" content="Filed Under No One">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://filedundernoone.uk/">
+<meta property="og:title" content="Filed Under No One — a novel">
+<meta property="og:description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread, coming in paperback and e-book. The companion stealth game is live now.">
+<meta property="og:image" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta property="og:image:secure_url" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FILED UNDER NO ONE — the struck wordmark over a surveillance photograph; the tagline reads, She kept the country's secrets. The country kept one — about her.">
+<meta property="book:author" content="DS Laboratory">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Filed Under No One — a novel">
+<meta name="twitter:description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread, coming in paperback and e-book.">
+<meta name="twitter:image" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta name="twitter:image:alt" content="FILED UNDER NO ONE — the struck wordmark over a surveillance photograph.">
+
+<!-- Icons & theme -->
 <meta name="theme-color" content="#04060b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <style>
 @font-face{font-family:'Bric';font-weight:100 900;font-display:swap;src:url(./fonts/BricolageGrotesque.woff2) format('woff2')}
 @font-face{font-family:'Registry';font-weight:300 700;font-display:swap;src:url(./fonts/SplineSansMono.woff2) format('woff2')}
@@ -110,27 +137,80 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
   .lead-grid{grid-template-columns:1fr;gap:30px}
   .lead{padding:12vh 0} .game .bg::after{background:linear-gradient(180deg,rgba(4,6,11,.4),rgba(4,6,11,.95))}
 }
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://filedundernoone.uk/#website",
+      "url": "https://filedundernoone.uk/",
+      "name": "Filed Under No One",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://dslaboratory.uk/#org" },
+      "about": { "@id": "https://filedundernoone.uk/#book" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dslaboratory.uk/#org",
+      "name": "DS Laboratory",
+      "url": "https://dslaboratory.uk/",
+      "description": "An independent studio building owned, deterministic, offline-first software and stories."
+    },
+    {
+      "@type": "Book",
+      "@id": "https://filedundernoone.uk/#book",
+      "name": "Filed Under No One",
+      "url": "https://filedundernoone.uk/",
+      "image": "https://filedundernoone.uk/img/og-card.jpg",
+      "genre": "Spy fiction",
+      "inLanguage": "en",
+      "bookFormat": ["https://schema.org/Paperback", "https://schema.org/EBook"],
+      "author": { "@id": "https://dslaboratory.uk/#org" },
+      "publisher": { "@id": "https://dslaboratory.uk/#org" },
+      "abstract": "For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see — then found a ledger that files the living as dead. She reported it. By morning she had never existed.",
+      "description": "A novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp. Coming in paperback and e-book."
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://filedundernoone.uk/#game",
+      "name": "Filed Under No One — Companion Game",
+      "url": "https://davidslv.uk/games/stealth/",
+      "description": "A free, top-down stealth game set the night she goes back in — post the guards, aim the lights, slip the blind spots she drew herself.",
+      "genre": ["Stealth", "Spy"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Any (modern web browser)",
+      "gamePlatform": "Web browser",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://dslaboratory.uk/#org" },
+      "isPartOf": { "@id": "https://filedundernoone.uk/#book" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP", "availability": "https://schema.org/InStock" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="grain"></div>
 
+<main>
 <!-- HERO -->
-<header class="hero">
-  <div class="bg"><img src="./img/hero.jpg" alt="A surveillance photograph: a woman walking, seen from behind, on a wet street at dusk."></div>
+<section class="hero">
+  <div class="bg"><img src="./img/hero.jpg" width="2000" height="1091" fetchpriority="high" decoding="async" alt="A surveillance photograph: a woman walking, seen from behind, on a wet street at dusk."></div>
   <div class="inner wrap">
     <div class="kick">A Novel · A Registry File</div>
-    <div class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></div>
+    <h1 class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></h1>
     <p class="tagline">She kept the country's secrets. The country kept one — <span class="sig">about her.</span></p>
   </div>
   <div class="cue"><span class="mono">↓ open the file</span></div>
-</header>
+</section>
 
 <!-- LEAD -->
 <section class="lead"><div class="wrap reveal lead-grid">
   <p>For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see. She was good at it. Then she opened a ledger she was meant to file and not read — and found it was quietly killing the living by writing them down as dead. She did the correct thing. She reported it. <span class="last">By morning she had never existed.</span></p>
-  <figure class="lead-fig"><img src="./img/figure-keyart.png" alt="A faceless figure standing in a shaft of amber light."></figure>
+  <figure class="lead-fig"><img width="800" height="1200" loading="lazy" decoding="async" src="./img/figure-keyart.png" alt="A faceless figure standing in a shaft of amber light."></figure>
 </div></section>
 
 <!-- THE FILE -->
@@ -151,19 +231,19 @@ ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
 
   <span class="kick filehead reveal">i · The watching</span>
   <div class="grid reveal">
-    <figure class="ev wide"><img src="./img/contact.jpg" alt="A surveillance contact sheet of the subject."><figcaption>Observation — subject, p.m. · F.153/17</figcaption></figure>
-    <figure class="ev third"><img src="./img/surv-bus.jpg" alt="A surveillance frame at a bus stop."><figcaption>Stop C · 17.46 · withdrawn as ordered</figcaption></figure>
+    <figure class="ev wide"><img loading="lazy" decoding="async" src="./img/contact.jpg" alt="A surveillance contact sheet of the subject."><figcaption>Observation — subject, p.m. · F.153/17</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/surv-bus.jpg" alt="A surveillance frame at a bus stop."><figcaption>Stop C · 17.46 · withdrawn as ordered</figcaption></figure>
   </div>
 
   <span class="kick filehead reveal">ii · The unmaking</span>
   <div class="grid reveal">
-    <figure class="ev third"><img src="./img/struck.jpg" alt="An index card stamped STRUCK OFF."><figcaption>Struck off — 14.3.74</figcaption></figure>
-    <figure class="ev third"><img src="./img/redaction.jpg" alt="A document redacted with an amber wash, text ghosting through."><figcaption>Retained — § 3(4)</figcaption></figure>
-    <figure class="ev third"><img src="./img/wtwin.jpg" alt="A file marked with a red W beside a too-clean twin."><figcaption>Watch — and the twin that hid the gap</figcaption></figure>
-    <figure class="ev third"><img src="./img/jacket.jpg" alt="A worn buff personal-file cover."><figcaption>Personal File — PF 604584 · Vane, M.</figcaption></figure>
-    <figure class="ev third"><img src="./img/absence.jpg" alt="An almost-blank leaf bearing only a serial number."><figcaption>Substitution leaf — only a number left</figcaption></figure>
-    <figure class="ev third"><img src="./img/verso.jpg" alt="The back of a photograph, bearing only a file number."><figcaption>Verso — PF 604584, no name</figcaption></figure>
-    <figure class="ev" style="grid-column:1/-1"><img src="./img/overwrite.jpg" alt="A typed line, 'I think he has told me the truth', corrected by hand to 'He had not.'"><figcaption>Minute — &ldquo;I think he has told me the truth.&rdquo; · later, another hand: &ldquo;He had not.&rdquo;</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/struck.jpg" alt="An index card stamped STRUCK OFF."><figcaption>Struck off — 14.3.74</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/redaction.jpg" alt="A document redacted with an amber wash, text ghosting through."><figcaption>Retained — § 3(4)</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/wtwin.jpg" alt="A file marked with a red W beside a too-clean twin."><figcaption>Watch — and the twin that hid the gap</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/jacket.jpg" alt="A worn buff personal-file cover."><figcaption>Personal File — PF 604584 · Vane, M.</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/absence.jpg" alt="An almost-blank leaf bearing only a serial number."><figcaption>Substitution leaf — only a number left</figcaption></figure>
+    <figure class="ev third"><img loading="lazy" decoding="async" src="./img/verso.jpg" alt="The back of a photograph, bearing only a file number."><figcaption>Verso — PF 604584, no name</figcaption></figure>
+    <figure class="ev" style="grid-column:1/-1"><img loading="lazy" decoding="async" src="./img/overwrite.jpg" alt="A typed line, 'I think he has told me the truth', corrected by hand to 'He had not.'"><figcaption>Minute — &ldquo;I think he has told me the truth.&rdquo; · later, another hand: &ldquo;He had not.&rdquo;</figcaption></figure>
   </div>
 
   <p class="filemeta reveal">She is the keeper of files, herself filed and shut. <span class="sig">Filed under no one.</span></p>
@@ -171,7 +251,7 @@ ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
 
 <!-- GAME -->
 <section class="game">
-  <div class="bg"><img src="./img/game.jpg" alt="A vast records corridor at night."></div>
+  <div class="bg"><img width="1066" height="1600" loading="lazy" decoding="async" src="./img/game.jpg" alt="A vast records corridor at night."></div>
   <div class="inner wrap reveal">
     <div class="kick">Companion Game · <span class="sig">Live Now</span></div>
     <h2>The book stops at the threshold.</h2>
@@ -186,6 +266,7 @@ ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
   <p class="kick" style="margin-top:16px;color:var(--steel-ink)">In paperback and e-book</p>
   <p>Not yet filed. The book is finished and on its way — no list to join, nothing to buy yet. When it's ready, it will be here.</p>
 </div></section>
+</main>
 
 <!-- FOOTER -->
 <footer><div class="wrap"><div class="foot">
