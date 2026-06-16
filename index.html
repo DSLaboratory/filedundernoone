@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filed Under No One — a novel</title>
+<meta name="description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread in the le Carré tradition. Coming to Kindle. Play the companion stealth game now.">
+<meta property="og:title" content="Filed Under No One">
+<meta property="og:description" content="She kept the country's secrets. The country kept one — about her. A novel, coming to Kindle. The companion stealth game is live now.">
+<meta property="og:image" content="./img/hero.jpg">
+<meta property="og:type" content="book">
+<meta name="theme-color" content="#04060b">
+<style>
+@font-face{font-family:'Bric';font-weight:100 900;font-display:swap;src:url(./fonts/BricolageGrotesque.woff2) format('woff2')}
+@font-face{font-family:'Registry';font-weight:300 700;font-display:swap;src:url(./fonts/SplineSansMono.woff2) format('woff2')}
+:root{
+  --void:#04060b; --void2:#070a12; --panel:#0a0f1c; --panel2:#0d1322;
+  --ink:#eef2fb; --ink2:#aeb9d6; --meta:#828fbb; --steel-ink:#8e9ec4;
+  --signal:#ffc31f; --signal-hot:#ffe07a; --line:rgba(150,170,220,.14);
+  --max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Bric',sans-serif;font-weight:500;color:var(--ink2);background:var(--void);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.mono{font-family:'Registry',ui-monospace,monospace}
+.kick{font-family:'Registry';font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--meta);font-size:.72rem}
+.sig{color:var(--signal)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+/* film grain */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.4;mix-blend-mode:multiply;
+  background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
+/* ── the struck logotype ── */
+.logo{font-family:'Bric';font-weight:800;line-height:.86;letter-spacing:-.015em;text-transform:uppercase;display:inline-block}
+.logo .l1{display:block;color:var(--steel-ink);font-size:.30em;font-weight:600;letter-spacing:.32em;margin-bottom:.2em}
+.logo .l2{position:relative;display:inline-block;color:var(--ink)}
+.logo .l2::after{content:"";position:absolute;left:-1.5%;right:-1.5%;top:54%;height:.066em;background:var(--signal);box-shadow:0 0 16px rgba(255,195,31,.55);transform:rotate(-1.4deg)}
+.stamp{font-family:'Registry';font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--signal);border:2px solid var(--signal);padding:.32em .6em;display:inline-block;transform:rotate(-3deg);font-size:.66rem;border-radius:2px;opacity:.92}
+/* ── HERO ── */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero .bg{position:absolute;inset:0;z-index:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.02)}
+.hero .bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg, rgba(4,6,11,.72) 0%, rgba(4,6,11,.12) 32%, rgba(4,6,11,.45) 70%, rgba(4,6,11,.96) 100%),
+  radial-gradient(120% 80% at 50% 120%, rgba(4,6,11,.7), transparent 60%)}
+.hero .inner{position:relative;z-index:2;width:100%;padding-bottom:8vh}
+.hero .logo{font-size:clamp(54px,12vw,150px);margin:14px 0 0}
+.hero .tagline{font-size:clamp(1.05rem,2.4vw,1.6rem);color:var(--ink);max-width:30ch;margin-top:28px;line-height:1.45;font-weight:500}
+.hero .cue{position:absolute;bottom:24px;right:32px;z-index:2}
+.hero .cue .mono{font-size:10px;letter-spacing:.3em;color:var(--meta)}
+/* ── LEAD ── */
+.lead{padding:18vh 0;border-top:1px solid var(--line);background:radial-gradient(120% 80% at 50% 0,#0a1120,var(--void) 70%)}
+.lead p{font-family:'Bric';font-weight:500;font-size:clamp(1.35rem,3.4vw,2.3rem);line-height:1.4;color:#dbe2ef;max-width:24ch}
+.lead .last{color:var(--ink)}
+/* ── THE FILE / evidence ── */
+.file{padding:12vh 0;border-top:1px solid var(--line)}
+.sechead{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:34px}
+.sechead h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.3rem,3vw,2rem);color:var(--ink);letter-spacing:-.01em}
+.about{font-size:clamp(1rem,1.6vw,1.12rem);color:#bcc6d6;max-width:60ch;margin-bottom:42px;line-height:1.62}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.ev{position:relative;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#000}
+.ev img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;filter:saturate(.9)}
+.ev figcaption{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;font-family:'Registry';font-size:9px;letter-spacing:.08em;color:var(--ink2);
+  background:linear-gradient(0deg,rgba(4,6,11,.92),transparent);text-transform:uppercase}
+.ev.wide{grid-column:span 4} .ev.tall{grid-column:span 2;grid-row:span 2}
+.ev.half{grid-column:span 2} .ev.third{grid-column:span 2}
+/* ── GAME ── */
+.game{position:relative;min-height:78vh;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line)}
+.game .bg{position:absolute;inset:0;z-index:0}
+.game .bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.8)}
+.game .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,6,11,.96) 0%,rgba(4,6,11,.7) 45%,rgba(4,6,11,.35) 100%)}
+.game .inner{position:relative;z-index:2;max-width:46ch}
+.game h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.6rem,4vw,2.6rem);color:var(--ink);line-height:1.05;margin:14px 0 18px;letter-spacing:-.01em}
+.game p{color:#c3ccd8;font-size:1.05rem;max-width:42ch}
+.cta{display:inline-block;margin-top:30px;padding:15px 30px;border:1px solid var(--signal);color:var(--signal);
+  font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.95rem;border-radius:2px;transition:.25s}
+.cta:hover{background:var(--signal);color:#0a0a0a;box-shadow:0 0 30px rgba(255,195,31,.35)}
+/* ── STATUS + FOOTER ── */
+.status{padding:14vh 0;text-align:center;border-top:1px solid var(--line)}
+.status .stamp{font-size:.9rem;padding:.5em 1em}
+.status p{max-width:42ch;margin:26px auto 0;color:var(--meta)}
+footer{padding:60px 0 80px;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.foot .logo{font-size:30px}
+.foot .colo{font-family:'Registry';font-size:11px;letter-spacing:.1em;color:var(--meta);text-transform:uppercase}
+.foot a.studio{font-family:'Registry';font-size:11px;letter-spacing:.14em;color:var(--steel-ink);text-transform:uppercase;transition:.25s}
+.foot a.studio:hover{color:var(--signal)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:760px){
+  .wrap{padding:0 22px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .ev.wide,.ev.tall,.ev.half,.ev.third{grid-column:span 2;grid-row:span 1}
+  .ev img{aspect-ratio:16/10}
+  .lead{padding:12vh 0} .game .bg::after{background:linear-gradient(180deg,rgba(4,6,11,.4),rgba(4,6,11,.95))}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bg"><img src="./img/hero.jpg" alt="A surveillance photograph: a woman walking, seen from behind, on a wet street at dusk."></div>
+  <div class="inner wrap">
+    <div class="kick">A Novel · A Registry File</div>
+    <div class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></div>
+    <p class="tagline">She kept the country's secrets. The country kept one — <span class="sig">about her.</span></p>
+  </div>
+  <div class="cue"><span class="mono">↓ open the file</span></div>
+</header>
+
+<!-- LEAD -->
+<section class="lead"><div class="wrap reveal">
+  <p>For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see. She was good at it. Then she opened a ledger she was meant to file and not read — and found it was quietly killing the living by writing them down as dead. She did the correct thing. She reported it. <span class="last">By morning she had never existed.</span></p>
+</div></section>
+
+<!-- THE FILE -->
+<section class="file"><div class="wrap">
+  <div class="sechead reveal"><h2>What the record says</h2><span class="kick">PF 604584 · Struck</span></div>
+  <p class="about reveal">Margaret Vane spent eleven years at the Registry deciding what the country was allowed to see — the watcher who chose the blind spots, posted the guards, aimed the lights. When she finds a ledger that files the living as dead and reports it, she is struck from every register that ever held her. For eleven weeks she is no one. Then she goes back in — past her own guards, through her own blind spots — to take back the proof that she was real.</p>
+  <div class="grid reveal">
+    <figure class="ev wide"><img src="./img/contact.jpg" alt="A surveillance contact sheet of the subject."><figcaption>Observation — subject · B.5. F.153/17</figcaption></figure>
+    <figure class="ev tall"><img src="./img/jacket.jpg" alt="A worn buff personal-file cover."><figcaption>Personal File — PF 604584 · Vane, Margaret</figcaption></figure>
+    <figure class="ev third"><img src="./img/struck.jpg" alt="A registry index card stamped STRUCK OFF."><figcaption>Struck off — 14.3.74</figcaption></figure>
+    <figure class="ev third"><img src="./img/redaction.jpg" alt="A document redacted with an amber wash, text ghosting through."><figcaption>Retained — § 3(4)</figcaption></figure>
+    <figure class="ev half"><img src="./img/overwrite.jpg" alt="A typed line corrected by hand."><figcaption>Minute — s/n 492-B</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- GAME -->
+<section class="game">
+  <div class="bg"><img src="./img/game.jpg" alt="A vast records corridor at night."></div>
+  <div class="inner wrap reveal">
+    <div class="kick">Companion Game · <span class="sig">Live Now</span></div>
+    <h2>The book stops at the threshold.</h2>
+    <p>The game is the night she goes back in. A free, top-down stealth game in the same dark — post the guards, aim the lights, slip the blind spots she drew herself.</p>
+    <a class="cta" href="https://davidslv.uk/games/stealth/">Walk her route →</a>
+  </div>
+</section>
+
+<!-- STATUS -->
+<section class="status"><div class="wrap reveal">
+  <span class="stamp">Coming to Kindle · MMXXVI</span>
+  <p>Not yet filed. The book is finished and on its way to Kindle — no list to join, nothing to buy yet. When it's ready, it'll be here.</p>
+</div></section>
+
+<!-- FOOTER -->
+<footer><div class="wrap"><div class="foot">
+  <div>
+    <div class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></div>
+    <div class="colo" style="margin-top:14px">Struck from the record. Retained indefinitely.</div>
+  </div>
+  <div style="text-align:right">
+    <div class="colo">MMXXVI</div>
+    <a class="studio" href="https://dslaboratory.uk">A DS Laboratory work · dslaboratory.uk</a>
+  </div>
+</div></div></footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
