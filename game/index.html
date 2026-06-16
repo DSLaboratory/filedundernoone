@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filed Under No One — the night she goes back in | free stealth game</title>
+<meta name="description" content="The book stops at the threshold. The game is the night Margaret Vane goes back into the building she once secured — to recover the proof she existed. Free top-down stealth, plays in your browser.">
+<link rel="canonical" href="https://filedundernoone.uk/game/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="DS Laboratory">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Filed Under No One">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://filedundernoone.uk/game/">
+<meta property="og:title" content="Filed Under No One — the night she goes back in">
+<meta property="og:description" content="The book stops at the threshold. The game is the night she goes back into the building she once secured. Free top-down stealth — no combat, only shadow.">
+<meta property="og:image" content="https://filedundernoone.uk/game/img/og-game.jpg">
+<meta property="og:image:secure_url" content="https://filedundernoone.uk/game/img/og-game.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FILED UNDER NO ONE — a top-down stealth game; a dark grid of corridors crossed by cones of guard light.">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Filed Under No One — the night she goes back in">
+<meta name="twitter:description" content="The book stops at the threshold. The game is the night she goes back in. Free top-down stealth — no combat, only shadow.">
+<meta name="twitter:image" content="https://filedundernoone.uk/game/img/og-game.jpg">
+
+<!-- Icons & theme -->
+<meta name="theme-color" content="#04060b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face{font-family:'Bric';font-weight:100 900;font-display:swap;src:url(./fonts/BricolageGrotesque.woff2) format('woff2')}
+@font-face{font-family:'Registry';font-weight:300 700;font-display:swap;src:url(./fonts/SplineSansMono.woff2) format('woff2')}
+:root{
+  --void:#04060b; --void2:#070a12; --panel:#0a0f1c; --panel2:#0d1322;
+  --ink:#eef2fb; --ink2:#aeb9d6; --meta:#828fbb; --steel-ink:#8e9ec4;
+  --signal:#ffc31f; --signal-hot:#ffe07a; --line:rgba(150,170,220,.14);
+  --calm:#5dc36b; --susp:#ffc31f; --hunt:#e05545; --max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Bric',sans-serif;font-weight:500;color:var(--ink2);background:var(--void);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.mono{font-family:'Registry',ui-monospace,monospace}
+.kick{font-family:'Registry';font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--meta);font-size:.72rem}
+.sig{color:var(--signal)}
+.slabel{font-family:'Registry';font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--steel-ink);font-size:.7rem;display:inline-block;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:24px}
+/* grain */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.4;mix-blend-mode:multiply;
+  background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
+/* struck wordmark */
+.logo{font-family:'Bric';font-weight:800;line-height:.86;letter-spacing:-.015em;text-transform:uppercase;display:inline-block}
+.logo .l1{display:block;color:var(--steel-ink);font-size:.30em;font-weight:600;letter-spacing:.30em;margin-bottom:.2em}
+.logo .l2{position:relative;display:inline-block;color:var(--ink)}
+.logo .l2::after{content:"";position:absolute;left:-1.5%;right:-1.5%;top:54%;height:.066em;background:var(--signal);box-shadow:0 0 16px rgba(255,195,31,.55);transform:rotate(-1.4deg)}
+/* top bar */
+.topbar{position:absolute;top:0;left:0;right:0;z-index:6;display:flex;justify-content:space-between;align-items:center;padding:22px 32px}
+.topbar .logo{font-size:30px}
+.topbar a.back{font-family:'Registry';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--steel-ink);transition:.25s}
+.topbar a.back:hover{color:var(--signal)}
+/* CTA */
+.cta{display:inline-block;padding:15px 32px;border:1px solid var(--signal);color:var(--signal);font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.95rem;border-radius:2px;transition:.25s}
+.cta:hover{background:var(--signal);color:#0a0a0a;box-shadow:0 0 30px rgba(255,195,31,.35)}
+.ghost{display:inline-block;margin-left:22px;font-family:'Registry';font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--meta);transition:.25s}
+.ghost:hover{color:var(--ink)}
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero .bg{position:absolute;inset:0;z-index:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(1.04) brightness(.8)}
+.hero .bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg, rgba(4,6,11,.86) 0%, rgba(4,6,11,.34) 30%, rgba(4,6,11,.5) 62%, rgba(4,6,11,.97) 100%),
+  radial-gradient(120% 80% at 50% 120%, rgba(4,6,11,.7), transparent 60%)}
+.hero .inner{position:relative;z-index:2;width:100%;padding-bottom:9vh}
+.hero h1{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(2.1rem,6vw,4.4rem);line-height:.98;letter-spacing:-.02em;color:var(--ink);max-width:18ch;margin:18px 0 0}
+.hero .sub{font-size:clamp(1rem,2vw,1.3rem);color:var(--ink2);max-width:46ch;margin-top:26px;line-height:1.5}
+.hero .btns{margin-top:34px;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.hero .cue{position:absolute;bottom:22px;right:32px;z-index:2}
+.hero .cue .mono{font-size:10px;letter-spacing:.3em;color:var(--meta)}
+/* generic section */
+section{position:relative}
+.band{padding:13vh 0;border-top:1px solid var(--line)}
+.lede{font-family:'Bric';font-weight:500;font-size:clamp(1.3rem,3vw,2.05rem);line-height:1.4;color:#dbe2ef;max-width:24ch}
+.h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,3.6vw,2.5rem);color:var(--ink);line-height:1.04;letter-spacing:-.01em}
+.body{font-size:clamp(1rem,1.5vw,1.12rem);color:#bcc6d6;max-width:54ch;line-height:1.62;margin-top:18px}
+/* split */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.split.rev{grid-template-columns:.95fr 1.05fr}
+.shot{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#000;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:16/13;image-rendering:auto}
+.shotcap{position:absolute;left:0;right:0;bottom:0;padding:9px 12px;font-family:'Registry';font-size:9.5px;letter-spacing:.08em;color:var(--ink2);background:linear-gradient(0deg,rgba(4,6,11,.92),transparent);text-transform:uppercase}
+.pull{font-family:'Registry';font-weight:500;font-size:clamp(.95rem,1.5vw,1.15rem);color:var(--steel-ink);border-left:3px solid rgba(255,195,31,.5);padding:6px 0 6px 20px;margin:26px 0 0;line-height:1.6;max-width:48ch}
+/* the one rule arithmetic */
+.rulewrap{background:radial-gradient(120% 90% at 50% 0,#0a1120,var(--void) 72%)}
+/* ALERT LADDER triptych */
+.ladder{background:var(--void2)}
+.rungs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.rung{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);display:flex;flex-direction:column}
+.rung .pic{position:relative;aspect-ratio:7/5;overflow:hidden;background:#000}
+.rung .pic img{width:100%;height:100%;object-fit:cover}
+.rung .meta{padding:18px 18px 22px}
+.rung .tag{display:flex;align-items:center;gap:10px;font-family:'Registry';font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
+.dot{width:11px;height:11px;border-radius:50%;flex:none;box-shadow:0 0 12px currentColor}
+.rung .finding{font-family:'Registry';font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--meta);margin-top:8px}
+.rung p{font-size:.96rem;color:#c3ccd8;margin-top:14px;line-height:1.55}
+.c-calm{color:var(--calm)} .c-susp{color:var(--susp)} .c-hunt{color:var(--hunt)}
+.ladnote{font-family:'Registry';font-size:.8rem;color:var(--meta);max-width:70ch;margin-top:26px;line-height:1.7}
+/* CAMPAIGN */
+.acts{display:flex;flex-direction:column;gap:64px;margin-top:44px}
+.spec{margin-top:50px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;font-family:'Registry';font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--steel-ink);text-align:center}
+.actno{font-family:'Bric';font-weight:800;font-size:clamp(2.4rem,6vw,4rem);color:rgba(142,158,196,.22);line-height:.8}
+.actttl{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.3rem,2.6vw,1.8rem);color:var(--ink);letter-spacing:-.01em;margin:8px 0 4px}
+.actwhen{font-family:'Registry';font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--meta)}
+/* WARDEN */
+.warden{background:linear-gradient(180deg,var(--void),#0b0710)}
+/* CALL */
+.call{position:relative;min-height:80vh;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line)}
+.call .bg{position:absolute;inset:0;z-index:0}
+.call .bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) brightness(.6)}
+.call .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,6,11,.97) 0%,rgba(4,6,11,.8) 48%,rgba(4,6,11,.55) 100%)}
+.call .inner{position:relative;z-index:2;max-width:50ch}
+.bookcard{margin-top:40px;border:1px solid var(--line);border-left:3px solid rgba(255,195,31,.4);border-radius:6px;background:linear-gradient(180deg,#0c1322,#090d18);padding:24px 28px;max-width:52ch}
+.bookcard .t{font-family:'Bric';font-weight:800;text-transform:uppercase;letter-spacing:-.01em;color:var(--ink);font-size:1.2rem}
+.bookcard p{font-size:.92rem;color:#aeb9d6;margin-top:10px;line-height:1.55}
+.bookcard a{display:inline-block;margin-top:14px;font-family:'Registry';font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--signal)}
+/* footer */
+footer{padding:56px 0 76px;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.foot .logo{font-size:26px}
+.foot .colo{font-family:'Registry';font-size:11px;letter-spacing:.1em;color:var(--meta);text-transform:uppercase}
+.foot a.studio{font-family:'Registry';font-size:11px;letter-spacing:.14em;color:var(--steel-ink);text-transform:uppercase;transition:.25s}
+.foot a.studio:hover{color:var(--signal)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:820px){
+  .split,.split.rev{grid-template-columns:1fr;gap:30px}
+  .rungs{grid-template-columns:1fr}
+  .topbar .logo{font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoGame",
+      "@id": "https://filedundernoone.uk/game/#game",
+      "name": "Filed Under No One",
+      "url": "https://davidslv.uk/games/stealth/",
+      "image": "https://filedundernoone.uk/game/img/og-game.jpg",
+      "description": "A free, top-down stealth game — the night Margaret Vane goes back into the building she once secured, to recover the proof she ever existed. No combat; only light and shadow. 20 hand-built levels, deterministic replays, plays in the browser.",
+      "genre": ["Stealth", "Spy"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Any (modern web browser)",
+      "gamePlatform": "Web browser",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://dslaboratory.uk/#org" },
+      "isBasedOn": { "@id": "https://filedundernoone.uk/#book" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP", "availability": "https://schema.org/InStock" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dslaboratory.uk/#org",
+      "name": "DS Laboratory",
+      "url": "https://dslaboratory.uk/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="grain"></div>
+
+<div class="topbar">
+  <a href="https://filedundernoone.uk" aria-label="Filed Under No One — home"><span class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></span></a>
+  <a class="back" href="https://filedundernoone.uk">← The novel</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="bg"><img src="./img/vault.jpg" alt="A top-down view of the game: a dark grid of corridors, the player and a guard, the green exit, crossed by pale cones of light." fetchpriority="high" decoding="async"></div>
+  <div class="inner wrap">
+    <div class="kick">Companion Game · Free · Plays in your browser</div>
+    <h1>The book stopped at the door. Tonight she goes through it.</h1>
+    <p class="sub">They struck her from every register that ever held her name. For eleven weeks she was no one. Now it is dark, and the building she once kept is between her and the only proof she was ever real — three things with her name still on them, and a long corridor of light to cross to reach the first.</p>
+    <div class="btns">
+      <a class="cta" href="https://davidslv.uk/games/stealth/">Walk her route →</a>
+      <a class="ghost" href="https://filedundernoone.uk">← Where the book leaves her</a>
+    </div>
+  </div>
+  <div class="cue"><span class="mono">↓ the night is logged as routine</span></div>
+</section>
+
+<!-- §0 HANDOFF -->
+<section class="band">
+  <div class="wrap reveal">
+    <span class="slabel">§0 · Handoff</span>
+    <p class="lede">The book hands her to the dark — and stops at the fence, with her hand on the wire.</p>
+    <p class="body">The novel walks Margaret Vane to the fence and stops there, with the lights of the building she used to run laid out below her like a circuit she drew. It does not follow her in. That is the night you play — the long crossing the book refuses to narrate, corridor by corridor, cone by cone, breath by held breath.</p>
+  </div>
+</section>
+
+<!-- §1 THE ONE RULE -->
+<section class="band rulewrap">
+  <div class="wrap reveal">
+    <span class="slabel">§1 · The one rule</span>
+    <div class="split">
+      <div>
+        <h2 class="h2">Stay in the dark and you are a rumour.</h2>
+        <p class="body">There is no fighting here — only what the light touches and what it doesn't. The guards see in hard wedges of it that swing and settle and sweep the floor ahead of them; step out of their reach into a patch of true shadow and their gaze passes straight through you, even with nothing between you but open air. The whole night is that single arithmetic — where the light is, where it isn't, and how long you can stand to wait in the dark for the wedge to move on.</p>
+        <p class="pull mono">What is seen is recorded. What is not seen did not happen.</p>
+      </div>
+      <figure class="shot"><img src="./img/calm.jpg" width="1400" height="1235" loading="lazy" decoding="async" alt="A guard's pale cone of light sweeps a corridor; the player waits one tile outside it, in shadow."><figcaption class="shotcap">Vision cone · stay outside the light, or stand on shadow</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- §2 ALERT LADDER -->
+<section class="band ladder">
+  <div class="wrap reveal">
+    <span class="slabel">§2 · Threat state of the floor</span>
+    <h2 class="h2">Three states of the floor — and you live below the first.</h2>
+    <div class="rungs">
+      <article class="rung">
+        <div class="pic"><img src="./img/calm.jpg" width="1400" height="1235" loading="lazy" decoding="async" alt="The HUD reads CALM; a guard's cone is pale and steady on its patrol route."></div>
+        <div class="meta">
+          <div class="tag c-calm"><span class="dot"></span> Calm</div>
+          <div class="finding">Finding · nothing to report</div>
+          <p>The patrol keeps its pattern; the corridor breathes in time. You are a rumour the building tells itself and doesn't believe.</p>
+        </div>
+      </article>
+      <article class="rung">
+        <div class="pic"><img src="./img/investigate.jpg" width="1400" height="1235" loading="lazy" decoding="async" alt="A guard shows a question mark and turns toward a noise; the HUD ticks toward suspicion."></div>
+        <div class="meta">
+          <div class="tag c-susp"><span class="dot"></span> Suspicious</div>
+          <div class="finding">Finding · anomaly — investigating</div>
+          <p>A cone clipped you. A head turns. You have the length of one held breath to stop being there.</p>
+        </div>
+      </article>
+      <article class="rung">
+        <div class="pic"><img src="./img/hunting.jpg" width="1400" height="1235" loading="lazy" decoding="async" alt="The HUD reads ALERT in red; a guard shows a red exclamation mark and a red vision cone falls on the player."></div>
+        <div class="meta">
+          <div class="tag c-hunt"><span class="dot"></span> Hunting</div>
+          <div class="finding">Finding · subject confirmed</div>
+          <p>Seen in full light, and the floor goes loud. Now the building is awake — and it knows the dark as well as you do.</p>
+        </div>
+      </article>
+    </div>
+    <p class="ladnote">Sound only ever sends a man to look; only being <em>seen</em> moves them up the ladder. Run and you're fast — and you leave a noise they'll come for. Sneak and you leave nothing at all.</p>
+  </div>
+</section>
+
+<!-- §3 CAMPAIGN -->
+<section class="band">
+  <div class="wrap reveal">
+    <span class="slabel">§3 · The operation, in three parts</span>
+    <h2 class="h2">Twenty nights. One way back in.</h2>
+    <p class="body">Three acts, end to end — who she was, what they did to the record, and the night she came to take it back.</p>
+    <div class="acts">
+      <div class="split">
+        <div><div class="actno">I</div><div class="actttl">Coverage</div><div class="actwhen">Who she was</div><p class="body">The desk where she decided what the country was allowed to see. Here she learns the building the way she once mapped it: every gap in the watch, drawn in her own hand.</p></div>
+        <figure class="shot"><img src="./img/act1.jpg" width="1400" height="1235" loading="lazy" decoding="async" alt="An early level: open corridors, a single guard, the desk floor she once kept."></figure>
+      </div>
+      <div class="split rev">
+        <figure class="shot"><img src="./img/act2.jpg" width="1400" height="1043" loading="lazy" decoding="async" alt="A tighter level with cover and more watchers as the record closes around her."></figure>
+        <div><div class="actno">II</div><div class="actttl">Struck</div><div class="actwhen">The report, and the quiet erasure</div><p class="body">She did the correct thing. She wrote it down. Watch a name come off the register one stamp at a time, until the last room that holds her is empty.</p></div>
+      </div>
+      <div class="split">
+        <div><div class="actno">III</div><div class="actttl">The Way Back In</div><div class="actwhen">The night, the file, the fence</div><p class="body">No more memory, no more record. Just the dark, the lights she aimed herself, and the one file she was never meant to read — on the far side of a man who still watches his door.</p></div>
+        <figure class="shot"><img src="./img/act3.jpg" width="1400" height="1235" loading="lazy" decoding="async" alt="A late level deep in the building: long sightlines, sweeping cones, the way back in."></figure>
+      </div>
+    </div>
+    <div class="spec">20 hand-built levels · 3 acts · deterministic replays · zero install · keyboard + gamepad</div>
+  </div>
+</section>
+
+<!-- §4 WARDEN / THREE KEYS -->
+<section class="band warden">
+  <div class="wrap reveal">
+    <span class="slabel">§4 · What must be recovered</span>
+    <div class="split rev">
+      <figure class="shot"><img src="./img/warden.jpg" width="1600" height="1192" loading="lazy" decoding="async" alt="A wide hall watched by a single large figure at his post — the Director, who never left his door."><figcaption class="shotcap">The last rooms of the night · the Director still keeps his door</figcaption></figure>
+      <div>
+        <h2 class="h2">Three things with her name still on them.</h2>
+        <p class="body">Somewhere in those rooms are three small, personal things — a set of prints, a photograph, a single leaf torn from a ledger — and each one she recovers puts a piece of her deletion back. The far door will not open until she has all three. And at the end of the last night stands the Director, who never left his post, who still watches his own door in the dark — the one man in the building who would know her if he turned around. The game never shows you whether he does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- §5 THE CALL -->
+<section class="call">
+  <div class="bg"><img src="./img/warden-zoom.jpg" alt="A guard and the detail of a vision cone, deep in the dark of the records floor." loading="lazy" decoding="async"></div>
+  <div class="inner wrap reveal">
+    <span class="slabel">§5 · The call</span>
+    <h2 class="h2">It's dark. She's at the fence. The rest is up to you.</h2>
+    <p class="body">A free, top-down stealth game in the same cold world as the novel — no combat, no install, no account. Just one woman, a building that forgot her on purpose, and a long walk through the light to take back the proof that she was real.</p>
+    <div class="btns" style="margin-top:30px"><a class="cta" href="https://davidslv.uk/games/stealth/">Walk her route →</a><span class="ghost">Free · plays in your browser</span></div>
+    <div class="bookcard">
+      <div class="t">Filed Under No One — the novel</div>
+      <p>Coming MMXXVI, in paperback and e-book. Not yet filed: the book is finished and on its way. No list to join, nothing to buy yet — when it's ready, it will be here.</p>
+      <a href="https://filedundernoone.uk">Read where the night begins →</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><div class="foot">
+  <div>
+    <span class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></span>
+    <div class="colo" style="margin-top:14px">Struck from the record. Retained indefinitely.</div>
+  </div>
+  <div style="text-align:right">
+    <div class="colo">A DS Laboratory work · MMXXVI</div>
+    <a class="studio" href="https://dslaboratory.uk">dslaboratory.uk</a>
+  </div>
+</div></div></footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
