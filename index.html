@@ -50,7 +50,9 @@ img{display:block;max-width:100%}
 .hero .cue{position:absolute;bottom:24px;right:32px;z-index:2}
 .hero .cue .mono{font-size:10px;letter-spacing:.3em;color:var(--meta)}
 /* ── LEAD ── */
-.lead{padding:18vh 0;border-top:1px solid var(--line);background:radial-gradient(120% 80% at 50% 0,#0a1120,var(--void) 70%)}
+.lead{padding:18vh 0;border-top:1px solid var(--line);position:relative;overflow:hidden;background:
+  linear-gradient(119deg, transparent 0 48%, rgba(255,214,90,.05) 51.5%, rgba(255,224,112,.26) 55.5%, rgba(255,195,31,.06) 60.5%, transparent 65%),
+  radial-gradient(120% 85% at 50% 0,#0a1120,var(--void) 72%)}
 .lead p{font-family:'Bric';font-weight:500;font-size:clamp(1.35rem,3.4vw,2.3rem);line-height:1.4;color:#dbe2ef;max-width:24ch}
 .lead .last{color:var(--ink)}
 /* ── THE FILE / evidence ── */
@@ -67,8 +69,11 @@ img{display:block;max-width:100%}
 .ev.half{grid-column:span 3} .ev.third{grid-column:span 2}
 /* lead two-column + the faceless figure */
 .lead-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
-.lead-fig img{width:100%;border-radius:6px;filter:saturate(.9) contrast(1.03);
-  -webkit-mask:radial-gradient(86% 94% at 56% 46%,#000 58%,transparent 97%);mask:radial-gradient(86% 94% at 56% 46%,#000 58%,transparent 97%)}
+.lead-fig{position:relative;display:flex;justify-content:center;align-items:flex-end;min-height:440px}
+.lead-fig::before{content:"";position:absolute;inset:0;z-index:0;mix-blend-mode:screen;
+  background:radial-gradient(38% 34% at 58% 30%, rgba(255,224,112,.12), transparent 72%)}
+.lead-fig img{position:relative;z-index:1;width:auto;max-height:540px;max-width:100%;
+  filter:contrast(1.05) brightness(1.02) drop-shadow(0 34px 52px rgba(0,0,0,.65))}
 /* the file's own voice — a typed watcher excerpt */
 .excerpt{margin:6px 0 50px;max-width:760px;background:linear-gradient(180deg,#0c1322,#090d18);border:1px solid var(--line);border-left:3px solid rgba(255,195,31,.45);border-radius:6px;padding:24px 30px}
 .excerpt pre{font-family:'Registry';font-size:clamp(11px,1.4vw,13.5px);line-height:1.75;color:#cdd6e6;white-space:pre-wrap;margin:12px 0}
@@ -125,7 +130,7 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
 <!-- LEAD -->
 <section class="lead"><div class="wrap reveal lead-grid">
   <p>For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see. She was good at it. Then she opened a ledger she was meant to file and not read — and found it was quietly killing the living by writing them down as dead. She did the correct thing. She reported it. <span class="last">By morning she had never existed.</span></p>
-  <figure class="lead-fig"><img src="./img/figure.jpg" alt="A faceless figure emerging from the dark under a shaft of amber light."></figure>
+  <figure class="lead-fig"><img src="./img/figure-keyart.png" alt="A faceless figure standing in a shaft of amber light."></figure>
 </div></section>
 
 <!-- THE FILE -->
