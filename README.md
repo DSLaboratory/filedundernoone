@@ -28,8 +28,10 @@ no runtime dependencies. It is served as a static site by GitHub Pages.
 
 ## Status
 
-**COMING · MMXXVI · in paperback and e-book.** Not yet filed — the book is finished
-and on its way. No list to join, nothing to buy yet. When it is ready, it will be here.
+**OUT NOW · in paperback and e-book.** Free to read online, in full — and yours to own:
+
+- UK — [paperback](https://www.amazon.co.uk/dp/1066649448) · [Kindle](https://www.amazon.co.uk/dp/B0H5SF9K3B)
+- US — [paperback](https://www.amazon.com/dp/1066649448) · [Kindle](https://www.amazon.com/dp/B0H5SF9K3B)
 
 ## Colophon
 

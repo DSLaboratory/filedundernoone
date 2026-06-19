@@ -35,10 +35,16 @@
   "publisher":{"@type":"Organization","name":"DS Laboratory"},
   "inLanguage":"en",
   "genre":"Spy fiction",
-  "bookFormat":"https://schema.org/EBook",
+  "bookFormat":["https://schema.org/Paperback","https://schema.org/EBook"],
   "isAccessibleForFree":true,
   "image":"https://filedundernoone.uk/book/img/og-book.jpg",
-  "description":"A novel of institutional dread in the le Carré tradition — free to read online, in full.",
+  "description":"A novel of institutional dread in the le Carré tradition — free to read online, in full, or own it in paperback and e-book on Amazon.",
+  "offers":[
+    {"@type":"Offer","url":"https://www.amazon.co.uk/dp/1066649448","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","areaServed":"GB"},
+    {"@type":"Offer","url":"https://www.amazon.co.uk/dp/B0H5SF9K3B","availability":"https://schema.org/InStock","areaServed":"GB"},
+    {"@type":"Offer","url":"https://www.amazon.com/dp/1066649448","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","areaServed":"US"},
+    {"@type":"Offer","url":"https://www.amazon.com/dp/B0H5SF9K3B","availability":"https://schema.org/InStock","areaServed":"US"}
+  ],
   "potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","urlTemplate":"https://filedundernoone.uk/book/"}},
   "hasPart":[
     {"@type":"Chapter","name":"The Method of Forgetting","url":"https://filedundernoone.uk/book/01-the-method-of-forgetting.html","position":1},
@@ -59,7 +65,7 @@
 <header class="bar">
   <a class="wordmark" href="index.html" aria-label="Filed Under No One — contents"><span class="l1">Filed Under</span><span class="l2">No&nbsp;One</span></a>
   <div class="tools">
-    <span class="own"><span class="ownlabel">Own the book</span> <span class="soon">coming soon</span></span>
+    <a class="own" href="index.html#own"><span class="ownlabel">Own the book</span> <span class="soon">on Amazon &rarr;</span></a>
     <button class="toggle" type="button" aria-pressed="false" aria-label="Switch to paper reading mode"><span class="ti" aria-hidden="true">◑</span> <span class="tlabel">Paper</span></button>
   </div>
 </header>
@@ -73,9 +79,17 @@
     <p class="tag">She kept the country’s secrets. The country kept one — <span class="sig">about her.</span></p>
     <p class="blurb">For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see — and, more quietly, what could go unwatched. She drew the blind spots herself. Then she found a ledger that kills the living by filing them as dead. She did the correct thing. She reported it. Now she has been struck from every register that ever held her name. For eleven weeks she is no one.</p>
     <div class="buy">
-      <a class="btn ghost disabled" aria-disabled="true">Paperback <span class="soon">coming soon</span></a>
-      <a class="btn ghost disabled" aria-disabled="true">E-book <span class="soon">coming soon</span></a>
       <a class="btn read" href="01-the-method-of-forgetting.html">Read free online &rarr;</a>
+    </div>
+    <div class="own-buy" id="own">
+      <div class="own-row"><span class="rl">UK</span>
+        <a class="btn ghost" href="https://www.amazon.co.uk/dp/1066649448">Paperback</a>
+        <a class="btn ghost" href="https://www.amazon.co.uk/dp/B0H5SF9K3B">Kindle</a>
+      </div>
+      <div class="own-row"><span class="rl">US</span>
+        <a class="btn ghost" href="https://www.amazon.com/dp/1066649448">Paperback</a>
+        <a class="btn ghost" href="https://www.amazon.com/dp/B0H5SF9K3B">Kindle</a>
+      </div>
     </div>
     <p class="ded"><em>For anyone who has ever had to prove they were real.</em></p>
   </div>

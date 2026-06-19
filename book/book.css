@@ -40,7 +40,8 @@ a{color:var(--link)}
 .wordmark{text-decoration:none;display:inline-block;font-size:13px}
 .wordmark .l1{font-size:8px;margin-bottom:2px}.wordmark .l2{font-size:17px}
 .tools{display:flex;align-items:center;gap:18px}
-.own{font-family:'Registry';font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.own{font-family:'Registry';font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;text-decoration:none;transition:color .2s}
+a.own:hover{color:var(--accent)}
 .own .soon,.soon,.soon2{color:var(--accent);opacity:.85}
 .toggle{font-family:'Registry';font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
   color:var(--text);background:transparent;border:1px solid var(--rule);border-radius:3px;padding:7px 12px;
@@ -96,9 +97,15 @@ main{padding:0 clamp(18px,5vw,28px)}
   padding:14px 24px;border-radius:3px;text-decoration:none;border:1px solid var(--rule);display:inline-flex;
   align-items:center;gap:9px;transition:.2s}
 .btn.ghost.disabled{color:var(--muted);cursor:not-allowed}
+.btn.ghost{color:var(--text);transition:border-color .2s,color .2s}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
 .btn.ghost .soon{font-family:'Registry';font-weight:600;font-size:.62rem;letter-spacing:.14em;color:var(--accent)}
 .btn.read{background:var(--accent);color:#0a0a0a;border-color:var(--accent)}
 .btn.read:hover{box-shadow:0 0 30px color-mix(in srgb,var(--accent) 40%,transparent)}
+.own-buy{display:flex;flex-direction:column;gap:12px;align-items:center;margin:18px 0 0}
+.own-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px}
+.own-row .rl{font-family:'Registry';font-weight:600;font-size:.66rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;min-width:1.8em;text-align:right}
+.own-buy .btn{padding:11px 18px;font-size:.78rem}
 .contents .ded{margin:30px auto 0;color:var(--muted);font-style:italic}
 nav.toc{margin:7vh auto 0;border-top:1px solid var(--rule);padding-top:30px}
 nav.toc h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:1.3rem;color:var(--strong);margin-bottom:18px;text-align:center}

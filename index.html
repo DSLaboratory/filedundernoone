@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Filed Under No One — a novel</title>
-<meta name="description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread in the le Carré tradition. Coming in paperback and e-book. Play the companion stealth game now.">
+<meta name="description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread in the le Carré tradition. Read free online, or own it in paperback and e-book on Amazon. Play the companion stealth game now.">
 <link rel="canonical" href="https://filedundernoone.uk/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="DS Laboratory">
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://filedundernoone.uk/">
 <meta property="og:title" content="Filed Under No One — a novel">
-<meta property="og:description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread, coming in paperback and e-book. The companion stealth game is live now.">
+<meta property="og:description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread, now in paperback and e-book. The companion stealth game is live now.">
 <meta property="og:image" content="https://filedundernoone.uk/img/og-card.jpg">
 <meta property="og:image:secure_url" content="https://filedundernoone.uk/img/og-card.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -27,7 +27,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Filed Under No One — a novel">
-<meta name="twitter:description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread, coming in paperback and e-book.">
+<meta name="twitter:description" content="She kept the country's secrets. The country kept one — about her. A novel of institutional dread, now in paperback and e-book.">
 <meta name="twitter:image" content="https://filedundernoone.uk/img/og-card.jpg">
 <meta name="twitter:image:alt" content="FILED UNDER NO ONE — the struck wordmark over a surveillance photograph.">
 
@@ -134,6 +134,11 @@ img{display:block;max-width:100%}
 .buy .btn.read:hover{box-shadow:0 0 30px rgba(255,195,31,.35)}
 .buy .btn.soon{color:var(--meta);cursor:not-allowed}
 .buy .btn.soon .s{font-family:'Registry';font-weight:600;font-size:.6rem;letter-spacing:.14em;color:var(--signal)}
+.own-buy{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+.own-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.own-row .rl{font-family:'Registry';font-weight:600;font-size:.66rem;letter-spacing:.18em;color:var(--meta);text-transform:uppercase;min-width:1.8em}
+.btn.own{font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;padding:11px 18px;border-radius:2px;text-decoration:none;border:1px solid var(--line);color:var(--ink2);display:inline-flex;align-items:center;transition:border-color .2s,color .2s}
+.btn.own:hover{border-color:var(--signal);color:var(--signal)}
 .bookoffer .note{font-family:'Registry';font-size:.76rem;letter-spacing:.18em;color:var(--meta);margin-top:24px;text-transform:uppercase}
 /* ── READ-THE-BOOK CTA ── */
 .readcta{padding:14vh 0;text-align:center;border-top:1px solid var(--line);background:radial-gradient(120% 80% at 50% 28%,#0a1120,var(--void) 72%)}
@@ -197,8 +202,14 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
       "author": { "@id": "https://dslaboratory.uk/#org" },
       "publisher": { "@id": "https://dslaboratory.uk/#org" },
       "abstract": "For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see — then found a ledger that files the living as dead. She reported it. By morning she had never existed.",
-      "description": "A novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp. Free to read online; coming in paperback and e-book.",
+      "description": "A novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp. Free to read online, in full — also in paperback and e-book on Amazon.",
       "isAccessibleForFree": true,
+      "offers": [
+        { "@type": "Offer", "url": "https://www.amazon.co.uk/dp/1066649448", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "areaServed": "GB" },
+        { "@type": "Offer", "url": "https://www.amazon.co.uk/dp/B0H5SF9K3B", "availability": "https://schema.org/InStock", "areaServed": "GB" },
+        { "@type": "Offer", "url": "https://www.amazon.com/dp/1066649448", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "areaServed": "US" },
+        { "@type": "Offer", "url": "https://www.amazon.com/dp/B0H5SF9K3B", "availability": "https://schema.org/InStock", "areaServed": "US" }
+      ],
       "potentialAction": { "@type": "ReadAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://filedundernoone.uk/book/" } }
     },
     {
@@ -247,13 +258,21 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
   <div class="bookoffer">
     <div class="kick">The novel</div>
     <h2>Read the whole book, free.</h2>
-    <p>Filed Under No One is free to read online, in full — and coming in paperback and e-book. No list to join, nothing to buy yet; when it's ready to own, it will be here.</p>
+    <p>Filed Under No One is free to read online, in full — and now yours to own in paperback and e-book. Read it for nothing, or keep it on the shelf.</p>
     <div class="buy">
       <a class="btn read" href="/book/">Read free online →</a>
-      <span class="btn soon" aria-disabled="true">Paperback <span class="s">coming soon</span></span>
-      <span class="btn soon" aria-disabled="true">E-book <span class="s">coming soon</span></span>
     </div>
-    <div class="note">Coming · MMXXVI</div>
+    <div class="own-buy">
+      <div class="own-row"><span class="rl">UK</span>
+        <a class="btn own" href="https://www.amazon.co.uk/dp/1066649448">Paperback</a>
+        <a class="btn own" href="https://www.amazon.co.uk/dp/B0H5SF9K3B">Kindle</a>
+      </div>
+      <div class="own-row"><span class="rl">US</span>
+        <a class="btn own" href="https://www.amazon.com/dp/1066649448">Paperback</a>
+        <a class="btn own" href="https://www.amazon.com/dp/B0H5SF9K3B">Kindle</a>
+      </div>
+    </div>
+    <div class="note">Now available · paperback &amp; e-book on Amazon</div>
   </div>
 </div></section>
 
@@ -299,7 +318,7 @@ ANALYTIC CODA:   No unusual contact observed. Routine behaviour.</pre>
   <h2>Read the whole book.</h2>
   <p>Free, online, in full — what the file says, and everything it was built to leave out. Margaret Vane's story, end to end.</p>
   <a class="cta" href="/book/">Read free online →</a>
-  <div class="sub">Free to read · paperback &amp; e-book coming MMXXVI</div>
+  <div class="sub">Free to read · now in paperback &amp; e-book on Amazon</div>
 </div></section>
 
 <!-- GAME -->
