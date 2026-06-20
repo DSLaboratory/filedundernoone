@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <title>Filed Under No One — a top-down stealth game</title>
+  <!-- Favicon: the FUNO struck-"N" mark inlined as a data URI (matches the production
+       site's favicon.svg). Inline — not a file — so it resolves under any base (/game/play/)
+       and in local preview, keeps the zero-asset-file rule, and stops the browser's default
+       favicon request 404'ing. -->
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%2304060b"/><rect x="4.5" y="4.5" width="55" height="55" rx="9" fill="none" stroke="%238e9ec4" stroke-width="1.5" opacity=".45"/><text x="32" y="44.5" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="%23eef2fb">N</text><rect x="9" y="29.25" width="46" height="5.5" rx="1" fill="%23ffc31f" transform="rotate(-6 32 32)"/></svg>'>
+  <style>
+    html, body { margin: 0; height: 100%; height: 100dvh; background: #0b0d12; color: #c8d0dc; font: 13px ui-monospace, monospace; overflow: hidden; }
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; touch-action: none; }
+    /* The canvas keeps its pixel buffer (cols x TILE); main.ts scales its DISPLAY size to
+       fill the viewport on any screen — phones included — preserving aspect + crisp pixels. */
+    canvas { image-rendering: pixelated; max-width: 100vw; max-height: 100dvh; }
+    a { color: #6fa8ff; }
+  </style>
+  <script type="module" crossorigin src="/game/play/assets/main-Dn-UJWN2.js"></script>
+  <link rel="modulepreload" crossorigin href="/game/play/assets/render-i_tjeFSy.js">
+</head>
+<body>
+  <canvas id="game"></canvas>
+</body>
+</html>
