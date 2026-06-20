@@ -95,6 +95,12 @@ img{display:block;max-width:100%}
 .embed{position:relative;aspect-ratio:16/9;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#000;margin-top:8px;box-shadow:0 0 60px rgba(0,0,0,.5)}
 .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .embed-note{font-family:'Registry';font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-top:14px}
+.keyart{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px;align-items:start}
+.keyart figure{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#05070d}
+.keyart img{width:100%;height:auto;display:block}
+.keyart figcaption{padding:12px 16px;font-family:'Registry';font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);display:flex;justify-content:space-between;gap:14px;align-items:center}
+.keyart figcaption a{color:var(--signal);white-space:nowrap}
+@media(max-width:680px){.keyart{grid-template-columns:1fr}}
 .shots{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:8px}
 .shot{position:relative;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#000}
 .shot img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/11;filter:saturate(.86) contrast(1.03)}
@@ -179,6 +185,17 @@ footer{padding:50px 0 70px;border-top:1px solid var(--line)}
   <div class="two">
     <p class="lede">The book stops at the fence. The game is the night it won't narrate.</p>
     <p class="body">For eleven years, Margaret Vane sat at a government records desk and decided what the country was allowed to see — and what could go unwatched. She drew the blind spots herself. Then she reported a ledger she was never meant to read, and by morning she had been struck from every register that ever held her name. <span class="sig">Filed Under No One</span> is two halves of one story: a novel that walks her to the fence and stops — and a top-down stealth game that is the night she goes back in, crossing the building she used to run to recover the only proof she ever existed.</p>
+  </div>
+</div></section>
+
+<!-- KEY ART -->
+<section class="band"><div class="wrap">
+  <span class="slabel">Key art</span>
+  <div class="keyart">
+    <figure><img src="../img/cover.jpg" loading="lazy" alt="Cover — Margaret seen from behind through a cab window on a wet 1970s London street, the title struck through.">
+      <figcaption><span>The cover · a novel, a registry file</span><a href="../img/cover.jpg">Full size ›</a></figcaption></figure>
+    <figure><img src="../game/img/menu.jpg" loading="lazy" alt="Title screen — the struck FILED UNDER NO ONE wordmark beside a figure walking into shadow.">
+      <figcaption><span>Title screen</span><a href="../game/img/menu.jpg">Full size ›</a></figcaption></figure>
   </div>
 </div></section>
 
