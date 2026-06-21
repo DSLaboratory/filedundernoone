@@ -155,13 +155,12 @@ footer{padding:56px 0 76px;border-top:1px solid var(--line)}
   "@graph": [
     {
       "@type": "VideoGame",
-      "@id": "https://filedundernoone.uk/game/#game",
+      "@id": "https://filedundernoone.uk/#game",
       "name": "Filed Under No One",
-      "url": "/game/play/",
+      "url": "https://filedundernoone.uk/game/play/",
       "image": "https://filedundernoone.uk/game/img/og-game.jpg",
       "description": "A free, top-down stealth game — the night Margaret Vane goes back into the building she once secured, to recover the proof she ever existed. No combat; only light and shadow. 20 hand-built levels, deterministic replays, plays in the browser.",
       "genre": ["Stealth", "Spy"],
-      "applicationCategory": "Game",
       "operatingSystem": "Any (modern web browser)",
       "gamePlatform": "Web browser",
       "inLanguage": "en",
@@ -174,6 +173,13 @@ footer{padding:56px 0 76px;border-top:1px solid var(--line)}
       "@id": "https://dslaboratory.uk/#org",
       "name": "DS Laboratory",
       "url": "https://dslaboratory.uk/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://filedundernoone.uk/" },
+        { "@type": "ListItem", "position": 2, "name": "The Game" }
+      ]
     }
   ]
 }

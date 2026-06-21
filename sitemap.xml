@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://filedundernoone.uk/</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://filedundernoone.uk/book/</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://filedundernoone.uk/game/</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://filedundernoone.uk/book/01-the-method-of-forgetting.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/02-duval.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/03-the-ledger.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/04-the-proper-channel.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/05-reconciled.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/06-eleven-weeks.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/07-her-own-blind-spots.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://filedundernoone.uk/book/08-the-fence.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://filedundernoone.uk/</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/game/</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/press/</loc><lastmod>2026-06-21</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/01-the-method-of-forgetting.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/02-duval.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/03-the-ledger.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/04-the-proper-channel.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/05-reconciled.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/06-eleven-weeks.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/07-her-own-blind-spots.html</loc><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://filedundernoone.uk/book/08-the-fence.html</loc><lastmod>2026-06-20</lastmod></url>
 </urlset>

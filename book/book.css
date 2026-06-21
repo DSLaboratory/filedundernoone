@@ -77,6 +77,11 @@ main{padding:0 clamp(18px,5vw,28px)}
 .endcta .ek{font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--strong);font-size:1.1rem}
 .endcta p{margin-top:10px;font-size:1rem;color:var(--text)}
 .endcta .game a{font-family:'Registry';font-size:.85rem;letter-spacing:.04em}
+/* quiet end-of-chapter nudge (ch.1–7) — far lighter than .endcta: one muted line, no panel */
+.ownline{margin:2.6em 0 .2em;font-family:'Registry';font-size:.82rem;letter-spacing:.01em;color:var(--muted);line-height:1.65}
+.ownline strong{color:var(--text);font-weight:600}
+.ownline a{color:var(--link)}
+.ownline a:hover{color:var(--accent)}
 
 /* ── contents / home ── */
 .contents{padding-top:5vh}
