@@ -1,0 +1,91 @@
+FILED UNDER NO ONE — PRESS COPY
+A free browser stealth game and the literary spy novel it completes.
+Press contact: X / @davidslv (DMs open) — no email. Press kit: https://filedundernoone.uk/press/
+================================================================================
+
+FACT SHEET
+- Title:        Filed Under No One
+- Developer:    DS Laboratory — a one-person studio, London
+- Author:       David Silva (design, writing, levels, direction)
+- Release:      2026 — live now, free, in the browser
+- Platform:     Web browser (desktop). Keyboard + gamepad. No install, no account, plays offline.
+- Price:        Free
+- Genre:        Top-down stealth · spy fiction · transmedia (game + novel)
+- Languages:    English
+- Engine:       lockstep — own engine, zero runtime dependencies, fully deterministic
+- Content:      A three-act story campaign (~20 hand-built levels) + 20+ free-play levels
+- Play:         https://filedundernoone.uk/game/play/
+- Read (novel): https://filedundernoone.uk/book/
+- Studio:       https://dslaboratory.uk
+
+================================================================================
+
+ONE-LINE PITCH
+Filed Under No One is a free browser stealth game and the literary spy novel it
+completes — the night a woman erased from every record breaks back into the
+government building she herself once secured, to steal back the only proof she
+ever existed. No combat. Only light, shadow, and the blind spots she drew.
+
+SHORT PITCH
+For eleven years, Margaret Vane sat at a government records desk and decided what
+the country was allowed to see — and, more quietly, what could go unwatched. She
+drew the blind spots herself. Then she reported a ledger she was never meant to
+read, and by morning she had been struck from every register that ever held her
+name. Filed Under No One is two halves of one story: a novel that walks her to the
+fence and stops — and a top-down stealth game that is the night the book refuses to
+narrate. You cross the building she used to run, cone by cone, breath by held
+breath, exploiting the surveillance she designed, to recover three small things
+with her name still on them. It runs free in a browser, on an engine built from
+nothing, and there is no fighting in it — only what the light touches, and what it
+doesn't.
+
+================================================================================
+
+HOW IT PLAYS (no combat, no weapons, no health bar)
+- Light is the whole game. Guards see in hard wedges of light, line-of-sight checked
+  tile by tile; corners block sight. To win, you are simply never seen.
+- The shadow rule. Step onto a shadow tile and a guard staring straight at you cannot
+  see you. Binary, legible, ruthless.
+- One detection meter, shared by the floor. Fills in under a second of unbroken sight,
+  drains the instant you break it. Fill it and you're taken — no second chances.
+- Sound vs sight. Sound only ever sends a guard to LOOK; only being SEEN raises the
+  alarm. Run and you're fast and loud; sneak and you leave nothing.
+- Tools. A deliberate knock lures a patrol; a corner radar shows guard facings while
+  calm — and dissolves to static the moment you go loud.
+- Controls. Arrows / WASD, run on Shift, action on Space / Z. Full rebinding; gamepad.
+
+SOUND — entirely procedural, even the music (synthesised live in code, no audio files).
+A cinematic menu drone; then silence on the floor, where sound marks change — papery
+footsteps, a rising "?" chirp, a two-voice "!" stab panned toward the guard who made
+it, and a heartbeat tempo-locked to the detection meter (60-180 BPM as capture nears).
+
+LOOK — drawn in code, in the playfield: no textures, no sprite sheets, no loaded images;
+every wall, cone, shadow and figure rendered live from Canvas 2D primitives, the player
+and guards hand-pixelled. Dark grids, pale cones, true-black shadow, one rationed amber
+signal — of a piece with the novel's cover. The form is the theme.
+
+================================================================================
+
+CHARACTERS (spoiler-safe)
+- Margaret Vane — twenty-seven; eleven years at the records desk. She maps the blind
+  spots of others and never once turned the lamp on her own. Her face is never shown on
+  any public-facing surface — the work sells the question of who she is now, not a portrait.
+- The Director — the one figure who never leaves his post, who still watches his own door
+  in the dark at the end of the last night; the only man who would know her if he turned
+  around. The game never shows you whether he does.
+
+TAGLINES / PULL-QUOTES
+- She kept the country's secrets. The country kept one — about her.
+- Erased on paper. Returning in person.
+- Stay in the dark and you are a rumour.
+- What is seen is recorded. What is not seen did not happen.
+- The most dangerous thing in the building is a rubber stamp.
+- The book stops at the threshold. The game is the night she goes back in.
+
+================================================================================
+
+WHO MADE IT
+DS Laboratory is a one-person studio in London. Filed Under No One — its engine, its
+prose, its levels — was designed, written, and directed to one standard by one person,
+David Silva, with AI carrying out much of the execution under that direction. The studio
+states this plainly: the decisions, the testing, and the bar are one author's.
