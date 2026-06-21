@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Press Kit — Filed Under No One</title>
-<meta name="description" content="Press kit for Filed Under No One — a free browser stealth game and the literary spy novel it completes. Trailer, fact sheet, screenshots, characters, and contact for press and award juries.">
+<meta name="description" content="Press kit for Filed Under No One — a free browser stealth game and the literary spy novel it completes. The kit, read as Margaret Vane's declassified personnel file.">
 <link rel="canonical" href="https://filedundernoone.uk/press/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="DS Laboratory">
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://filedundernoone.uk/press/">
 <meta property="og:title" content="Press Kit — Filed Under No One">
-<meta property="og:description" content="A free browser stealth game and the literary spy novel it completes. Trailer, fact sheet, screenshots, and contact for press & award juries.">
+<meta property="og:description" content="A free browser stealth game and the literary spy novel it completes — the press kit, read as Margaret Vane's declassified personnel file. Fact sheet, screenshots, key art, contact.">
 <meta property="og:image" content="https://filedundernoone.uk/img/og-card.jpg">
 <meta property="og:image:secure_url" content="https://filedundernoone.uk/img/og-card.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -26,325 +26,322 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Press Kit — Filed Under No One">
-<meta name="twitter:description" content="A free browser stealth game and the spy novel it completes. Trailer, fact sheet, screenshots, contact for press & juries.">
+<meta name="twitter:description" content="A free browser stealth game and the spy novel it completes — the press kit as a declassified file. Fact sheet, screenshots, key art, contact.">
 <meta name="twitter:image" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta name="twitter:image:alt" content="FILED UNDER NO ONE — a free stealth game and the spy novel it completes.">
 
-<!-- Icons & theme -->
 <meta name="theme-color" content="#04060b">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-
+<link rel="preload" as="image" href="assets/keyart/margaret-keeper.jpg">
 <style>
 @font-face{font-family:'Bric';font-weight:100 900;font-display:swap;src:url(../fonts/BricolageGrotesque.woff2) format('woff2')}
-@font-face{font-family:'Registry';font-weight:300 700;font-display:swap;src:url(../fonts/SplineSansMono.woff2) format('woff2')}
+@font-face{font-family:'Reg';font-weight:300 700;font-display:swap;src:url(../fonts/SplineSansMono.woff2) format('woff2')}
 :root{
-  --void:#04060b; --void2:#070a12; --panel:#0a0f1c; --panel2:#0d1322;
-  --ink:#eef2fb; --ink2:#aeb9d6; --meta:#828fbb; --steel-ink:#8e9ec4;
-  --signal:#ffc31f; --signal-hot:#ffe07a; --line:rgba(150,170,220,.14);
-  --calm:#5dc36b; --susp:#ffc31f; --hunt:#e05545; --max:1180px;
+  --void:#04060b; --plate:#080b14; --ink:#eef2fb; --ink2:#aeb9d6; --meta:#7f8bb0;
+  --buff:#c9bb98; --buff2:#cfc3a4; --buffink:#1a160d; --buffbody:#2a2410; --buffmeta:#4a4127; --buffline:rgba(40,32,12,.26);
+  --accent:#6b3406; --amber:#ffc31f; --thread:#7a6a3e; --max:940px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Bric',sans-serif;font-weight:500;color:var(--ink2);background:var(--void);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Bric',sans-serif;font-weight:500;color:var(--ink2);background:var(--void);line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(80% 40% at 50% -4%,rgba(255,195,31,.07),transparent 60%)}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
-.mono{font-family:'Registry',ui-monospace,monospace}
-.kick{font-family:'Registry';font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--meta);font-size:.72rem}
-.sig{color:var(--signal)}
-.slabel{font-family:'Registry';font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--steel-ink);font-size:.7rem;display:inline-block;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:22px}
-.grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.4;mix-blend-mode:multiply;
-  background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
-.logo{font-family:'Bric';font-weight:800;line-height:.86;letter-spacing:-.015em;text-transform:uppercase;display:inline-block}
-.logo .l1{display:block;color:var(--steel-ink);font-size:.30em;font-weight:600;letter-spacing:.30em;margin-bottom:.2em}
-.logo .l2{position:relative;display:inline-block;color:var(--ink)}
-.logo .l2::after{content:"";position:absolute;left:-1.5%;right:-1.5%;top:54%;height:.066em;background:var(--signal);box-shadow:0 0 16px rgba(255,195,31,.55);transform:rotate(-1.4deg)}
-.topbar{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:16px 32px;
-  background:rgba(4,6,11,.82);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
-.topbar .logo{font-size:24px}
-.topbar nav{display:flex;gap:22px;align-items:center}
-.topbar nav a{font-family:'Registry';font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel-ink);transition:.25s}
-.topbar nav a:hover{color:var(--signal)}
-@media(max-width:680px){.topbar nav a.hideS{display:none}}
-.phero{padding:74px 0 54px;border-bottom:1px solid var(--line);position:relative;overflow:hidden;
-  background:radial-gradient(120% 90% at 50% 0,#0a1120,var(--void) 70%)}
-.phero .logo{font-size:clamp(40px,8vw,86px);margin-top:14px}
-.phero .tagline{font-size:clamp(1.05rem,2.2vw,1.5rem);color:var(--ink);max-width:40ch;margin-top:24px;line-height:1.4}
-.phero .quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-.chip{font-family:'Registry';font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);
-  border:1px solid var(--line);border-radius:30px;padding:7px 14px}
-.chip.free{border-color:rgba(255,195,31,.5);color:var(--signal)}
-.phero .btns{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.cta{display:inline-block;padding:14px 28px;border:1px solid var(--signal);color:var(--signal);font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.9rem;border-radius:2px;transition:.25s}
-.cta:hover{background:var(--signal);color:#0a0a0a;box-shadow:0 0 30px rgba(255,195,31,.35)}
-.btn2{display:inline-block;padding:14px 24px;border:1px solid var(--line);color:var(--ink2);font-family:'Registry';font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;border-radius:2px;transition:.25s}
-.btn2:hover{border-color:var(--steel-ink);color:var(--ink)}
-.band{padding:9vh 0;border-top:1px solid var(--line)}
-.h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.4rem,3.2vw,2.2rem);color:var(--ink);line-height:1.04;letter-spacing:-.01em}
-.body{font-size:clamp(1rem,1.5vw,1.1rem);color:#bcc6d6;max-width:58ch;line-height:1.62;margin-top:16px}
-.lede{font-family:'Bric';font-weight:500;font-size:clamp(1.25rem,2.8vw,1.9rem);line-height:1.4;color:#dbe2ef;max-width:30ch}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.fact{background:var(--panel);padding:18px 20px}
-.fact .k{font-family:'Registry';font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--meta)}
-.fact .v{color:var(--ink);font-size:.98rem;margin-top:7px;line-height:1.4}
-.fact .v a{color:var(--signal)}
-@media(max-width:760px){.facts{grid-template-columns:1fr 1fr}}
-@media(max-width:480px){.facts{grid-template-columns:1fr}}
-.embed{position:relative;aspect-ratio:16/9;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#000;margin-top:8px;box-shadow:0 0 60px rgba(0,0,0,.5)}
-.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.embed-note{font-family:'Registry';font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-top:14px}
-.keyart{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px;align-items:start}
-.keyart figure{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#05070d}
-.keyart img{width:100%;height:auto;display:block}
-.keyart figcaption{padding:12px 16px;font-family:'Registry';font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);display:flex;justify-content:space-between;gap:14px;align-items:center}
-.keyart figcaption a{color:var(--signal);white-space:nowrap}
-@media(max-width:680px){.keyart{grid-template-columns:1fr}}
-.shots{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:8px}
-.shot{position:relative;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#000}
-.shot img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/11;filter:saturate(.86) contrast(1.03)}
-.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;font-family:'Registry';font-size:9px;letter-spacing:.06em;color:var(--ink2);text-transform:uppercase;background:linear-gradient(0deg,rgba(4,6,11,.92),transparent)}
-.shot.big{grid-column:span 3} .shot.med{grid-column:span 3} .shot.third{grid-column:span 2}
-@media(max-width:760px){.shots{grid-template-columns:repeat(2,1fr)}.shot.big,.shot.med,.shot.third{grid-column:span 2}.shot img{aspect-ratio:16/10}}
-.mech{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
-.m{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:var(--panel)}
-.m h4{font-family:'Bric';font-weight:800;color:var(--ink);font-size:1.02rem;margin-bottom:6px}
-.m p{font-size:.92rem;color:#aeb9d6;line-height:1.55}
-.m p .sig{color:var(--signal)}
-@media(max-width:760px){.mech{grid-template-columns:1fr}}
-.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
-.rung{border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:var(--panel2)}
-.rung .tag{display:flex;align-items:center;gap:9px;font-family:'Registry';font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem}
-.dot{width:10px;height:10px;border-radius:50%;box-shadow:0 0 10px currentColor}
-.c-calm{color:var(--calm)} .c-susp{color:var(--susp)} .c-hunt{color:var(--hunt)}
-.rung p{font-size:.86rem;color:#aeb9d6;margin-top:9px;line-height:1.5}
-@media(max-width:680px){.ladder{grid-template-columns:1fr}}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:46px}
-@media(max-width:760px){.two{grid-template-columns:1fr;gap:30px}}
-.chars{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
-.char{border:1px solid var(--line);border-left:3px solid rgba(255,195,31,.4);border-radius:6px;padding:20px 22px;background:linear-gradient(180deg,#0c1322,#090d18)}
-.char h4{font-family:'Bric';font-weight:800;text-transform:uppercase;color:var(--ink);font-size:1.05rem}
-.char p{font-size:.92rem;color:#aeb9d6;margin-top:9px;line-height:1.55}
-@media(max-width:680px){.chars{grid-template-columns:1fr}}
-.quotes{display:flex;flex-direction:column;gap:14px;margin-top:8px}
-.q{font-family:'Bric';font-weight:500;font-size:clamp(1.1rem,2.2vw,1.5rem);color:#dbe2ef;border-left:3px solid rgba(255,195,31,.5);padding-left:20px;line-height:1.35}
-.dl{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
-.d{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:var(--panel);transition:border-color .25s}
-.d:hover{border-color:var(--steel-ink)}
-.d .t{font-family:'Bric';font-weight:800;color:var(--ink);font-size:1rem}
-.d .s{font-family:'Registry';font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--meta);margin-top:5px}
-.d .a{font-family:'Registry';font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--signal);margin-top:12px;display:inline-block}
-@media(max-width:680px){.dl{grid-template-columns:1fr}}
-.contact{background:radial-gradient(120% 80% at 50% 0,#0a1120,var(--void) 72%)}
-.contact a.handle{font-family:'Bric';font-weight:800;color:var(--signal);font-size:clamp(1.3rem,3vw,2rem)}
-footer{padding:50px 0 70px;border-top:1px solid var(--line)}
-.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
-.foot .logo{font-size:24px}
-.foot .colo{font-family:'Registry';font-size:11px;letter-spacing:.1em;color:var(--meta);text-transform:uppercase}
-.foot a.studio{font-family:'Registry';font-size:11px;letter-spacing:.14em;color:var(--steel-ink);text-transform:uppercase}
-.foot a.studio:hover{color:var(--signal)}
+.mono{font-family:'Reg',ui-monospace,monospace}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
+.jacket a:focus-visible{outline-color:var(--accent)}
+.skip{position:absolute;left:-9999px;top:0;z-index:60}
+.skip:focus{left:12px;top:10px;background:var(--void);color:var(--amber);font-family:'Reg';font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border:1px solid var(--amber)}
+/* sticky minimal bar */
+.bar{position:sticky;top:0;z-index:40;display:flex;justify-content:space-between;align-items:center;gap:18px;
+  padding:11px 26px;background:rgba(4,6,11,.9);border-bottom:1px solid rgba(150,170,220,.12);font-family:'Reg';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--meta)}
+.bar .wm{color:var(--ink);font-family:'Bric';font-weight:800;letter-spacing:.02em}
+.bar .wm s{text-decoration-color:var(--amber);text-decoration-thickness:2px}
+.bar a{display:inline-flex;align-items:center;min-height:40px}
+.bar a:hover{color:var(--amber)}
+.bar nav{display:flex;gap:20px}
+/* THE JACKET — buff paper bound on a treasury-tag spine */
+.jacket{position:relative;max-width:940px;margin:54px auto;background:var(--buff);color:var(--buffink);
+  background-image:repeating-linear-gradient(0deg,rgba(40,32,12,.035) 0 2px,transparent 2px 5px);
+  border:1px solid rgba(40,32,12,.3);box-shadow:0 40px 120px rgba(0,0,0,.6)}
+.spine{position:absolute;left:26px;top:24px;bottom:24px;width:2px;background:rgba(40,32,12,.4)}
+.hole{position:absolute;left:21px;width:12px;height:12px;border-radius:50%;background:var(--void);box-shadow:inset 0 0 0 1px rgba(40,32,12,.5)}
+.hole.t{top:40px}.hole.b{bottom:40px}
+.thread{position:absolute;left:18px;top:46px;width:18px;height:2px;background:var(--thread);transform:rotate(20deg);opacity:.85}
+.thread.b{top:auto;bottom:46px;transform:rotate(-20deg)}
+.leaf{padding:0 54px 0 70px}
+.runhead{position:absolute;top:16px;right:26px;font-family:'Reg';font-size:10px;letter-spacing:.2em;color:var(--buffmeta)}
+/* file hero */
+.hero{padding:64px 54px 44px 70px;border-bottom:1px solid var(--buffline)}
+.hero .wm{font-family:'Bric';font-weight:800;text-transform:uppercase;line-height:.82;letter-spacing:-.01em;color:var(--buffink);font-size:clamp(42px,8.5vw,86px)}
+.hero .wm .one{position:relative;display:inline-block}
+.hero .wm .one::after{content:"";position:absolute;left:-1%;right:-1%;top:52%;height:.07em;background:var(--amber);transform:rotate(-1.6deg)}
+.hero .hook{font-size:clamp(1.15rem,2.4vw,1.6rem);font-weight:500;max-width:30ch;margin-top:26px;line-height:1.6;color:var(--buffbody);text-wrap:balance}
+.stamp{display:inline-block;margin-top:30px;font-family:'Bric';font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:.82rem;color:var(--accent);
+  border:2px solid rgba(107,52,6,.7);padding:7px 14px;transform:rotate(-3deg);border-radius:0}
+.fhead{margin-top:34px;border-top:1px solid var(--buffline);padding-top:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:9px 30px;max-width:560px}
+.fhead .row{display:flex;gap:12px;font-family:'Reg';font-size:.74rem;letter-spacing:.04em}
+.fhead .k{color:var(--buffmeta);min-width:104px;text-transform:uppercase}
+.fhead .v{color:var(--buffink);font-weight:600}
+.fhead .v.free{color:var(--accent)}
+/* file tab section divider (these are real headings) */
+.tab{position:relative;padding:46px 54px 8px 70px}
+.tab .lab{display:inline-block;font-family:'Reg';font-weight:400;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#4f4628;border-bottom:2px solid rgba(40,32,12,.4);padding-bottom:6px}
+.sec{padding:8px 54px 40px 70px}
+.prose{font-size:1.06rem;line-height:1.6;color:var(--buffbody);max-width:60ch}
+.prose .sig{color:var(--accent);font-weight:700}
+.prose+.prose{margin-top:14px}
+/* pull-quote interstitial — full bleed void */
+.pq{background:var(--void);padding:clamp(48px,13vh,150px) 26px;text-align:center}
+.pq p{font-family:'Bric';font-weight:500;font-style:italic;font-size:clamp(1.3rem,3.6vw,2.3rem);color:#dbe2ef;max-width:24ch;margin:0 auto;line-height:1.34;text-wrap:balance}
+.pq .sig{color:var(--amber);font-style:normal;font-weight:600}
+/* the redaction bar — the signature */
+.subject{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:680px){.subject{grid-template-columns:1fr}}
+.subj h3{font-family:'Bric';font-weight:800;text-transform:uppercase;color:var(--buffink);font-size:1rem;letter-spacing:.01em}
+.subj p{font-size:.95rem;color:var(--buffbody);margin-top:8px;line-height:1.55;max-width:34ch}
+.redact{margin-top:14px;height:54px;background:repeating-linear-gradient(90deg,rgba(255,195,31,.82) 0 14px,rgba(255,195,31,.66) 14px 28px);
+  border:1px solid rgba(107,52,6,.5);display:flex;align-items:center;padding:0 14px;font-family:'Reg';font-weight:600;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#2a1a04}
+.redcap{font-family:'Reg';font-size:.7rem;color:var(--buffmeta);margin-top:7px;letter-spacing:.06em;font-style:italic}
+/* exhibit plate — full bleed void with a game render */
+.plate{background:var(--void);padding:0}
+.plate img{width:100%;height:auto;display:block;max-height:min(78vh,620px);object-fit:cover}
+.plate .cap{max-width:var(--max);margin:0 auto;padding:16px 26px 22px;font-family:'Reg';font-size:.74rem;letter-spacing:.06em;color:var(--meta)}
+.plate .cap b{color:var(--ink);font-weight:600}
+/* CTAs as text links on buff */
+.links{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 26px}
+.links a{font-family:'Reg';font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);text-decoration:underline;text-decoration-color:var(--amber);text-underline-offset:4px}
+/* exhibits grid (on buff, dark plates) */
+.exs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:680px){.exs{grid-template-columns:1fr}}
+.ex{background:var(--void);border:1px solid rgba(40,32,12,.3)}
+.ex img{width:100%;height:auto;display:block}
+.ex .m{padding:9px 12px;display:flex;justify-content:space-between;gap:12px;font-family:'Reg';font-size:.66rem;letter-spacing:.06em;color:var(--meta);text-transform:uppercase}
+.ex .m b{color:var(--ink2);font-weight:600}
+/* minute-sheet rows */
+.minutes{border-top:1px solid var(--buffline)}
+.minutes .r{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--buffline);align-items:baseline}
+.minutes .s{font-family:'Reg';font-size:.72rem;color:var(--accent)}
+.minutes .t{font-size:.96rem;color:var(--buffbody);line-height:1.5}
+.minutes .t b{font-weight:700}
+.statuskey{margin-top:18px;font-family:'Reg';font-size:.76rem;color:var(--buffbody);line-height:1.9;border-left:2px solid rgba(107,52,6,.5);padding-left:14px}
+.statuskey b{color:var(--accent)}
+/* two-up note */
+.twoup{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+@media(max-width:680px){.twoup{grid-template-columns:1fr}}
+.twoup h3{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:.95rem;color:var(--buffink);margin-bottom:8px}
+.twoup p{font-size:.93rem;color:var(--buffbody);line-height:1.58}
+/* fact minute sheet */
+.fs{border-top:1px solid var(--buffline)}
+.fs .r{display:grid;grid-template-columns:170px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--buffline)}
+.fs .k{font-family:'Reg';font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--buffmeta)}
+.fs .v{font-size:.95rem;color:var(--buffbody);line-height:1.5}
+.fs .v a{color:var(--accent);text-decoration:underline;text-decoration-color:var(--amber)}
+/* enclosures */
+.enc{border-top:1px solid var(--buffline)}
+.enc a{display:grid;grid-template-columns:54px 1fr auto;gap:14px;padding:13px 0;border-bottom:1px solid var(--buffline);align-items:baseline}
+.enc .id{font-family:'Reg';font-size:.74rem;color:var(--accent)}
+.enc .t{font-size:.98rem;color:var(--buffbody)}
+.enc .s{font-family:'Reg';font-size:.68rem;color:var(--buffmeta);text-transform:uppercase;letter-spacing:.06em}
+.enc .go{font-family:'Reg';font-size:.72rem;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;justify-self:end}
+/* CODA */
+.coda{background:var(--void);padding:clamp(56px,14vh,160px) 26px;text-align:center;background-image:radial-gradient(70% 60% at 50% 40%,rgba(255,195,31,.08),transparent 65%)}
+.coda .k{font-family:'Reg';font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--meta)}
+.coda .h{font-family:'Bric';font-weight:800;text-transform:uppercase;color:var(--ink);font-size:clamp(1.5rem,4vw,2.4rem);margin:12px 0 16px}
+.coda .x{font-family:'Bric';font-weight:800;color:var(--amber);font-size:clamp(1.2rem,3vw,1.7rem)}
+.coda .ref{font-family:'Reg';font-size:.7rem;letter-spacing:.1em;color:var(--meta);text-transform:uppercase;margin-top:26px;line-height:1.8}
+/* small screens — stop sub-560px overflow */
+@media(max-width:560px){
+  .hero{padding:40px 22px 32px 30px}
+  .tab{padding:34px 22px 8px 30px}
+  .sec{padding:8px 22px 32px 30px}
+  .leaf{padding:0 22px 0 30px}
+  .fs .r{grid-template-columns:1fr;gap:2px;padding:10px 0}
+  .fhead{grid-template-columns:1fr;gap:7px}
+  .fhead .k{min-width:0}
+  .enc a{grid-template-columns:40px 1fr;gap:4px 12px}
+  .enc .s{grid-column:2}
+  .enc .go{display:none}
+  .spine{left:12px}.hole{left:7px}.thread{left:4px}.runhead{right:18px}
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+@media print{
+  .bar{position:static}
+  html{scroll-behavior:auto}
+  body{background:#fff;background-image:none;color:#000}
+  a[href]{color:#000}
+  .pq,.coda{padding:6vh 0;background:#fff;background-image:none}
+  .pq p,.coda .h,.coda .x,.coda .k,.coda .ref{color:#000}
+  .plate img{max-height:none}
+}
 </style>
 </head>
 <body>
-<div class="grain"></div>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- TOPBAR -->
-<div class="topbar">
-  <a href="https://filedundernoone.uk" aria-label="Filed Under No One — home"><span class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></span></a>
-  <nav>
-    <a class="hideS" href="../book/">The novel</a>
-    <a class="hideS" href="../game/">The game</a>
-    <a href="#assets">Download kit</a>
-  </nav>
-</div>
+<header class="bar">
+  <a href="https://filedundernoone.uk" class="wm" aria-label="Filed Under No One — home">FILED UNDER <s>NO ONE</s></a>
+  <nav><a href="../game/play/">Play <span aria-hidden="true">▸</span></a><a href="#enclosures">Enclosures <span aria-hidden="true">↓</span></a></nav>
+</header>
 
-<!-- HERO -->
-<header class="phero"><div class="wrap">
-  <div class="kick">Press Kit · For press &amp; award juries</div>
-  <div class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></div>
-  <p class="tagline">A free browser stealth game and the literary spy novel it completes. <span class="sig">No combat — only light, shadow, and the blind spots she drew.</span></p>
-  <div class="quick">
-    <span class="chip free">Free</span>
-    <span class="chip">Top-down stealth</span>
-    <span class="chip">Plays in browser</span>
-    <span class="chip">No install · no account</span>
-    <span class="chip">Keyboard + gamepad</span>
-    <span class="chip">2026</span>
-  </div>
-  <div class="btns">
-    <a class="cta" href="../game/play/">▶ Play free in browser</a>
-    <a class="btn2" href="../book/">Read the novel free</a>
-  </div>
-</div></header>
+<main id="main">
 
-<main>
-<!-- PITCH -->
-<section class="band"><div class="wrap">
-  <span class="slabel">The pitch</span>
-  <div class="two">
-    <p class="lede">The book stops at the fence. The game is the night it won't narrate.</p>
-    <p class="body">For eleven years, Margaret Vane sat at a government records desk and decided what the country was allowed to see — and what could go unwatched. She drew the blind spots herself. Then she reported a ledger she was never meant to read, and by morning she had been struck from every register that ever held her name. <span class="sig">Filed Under No One</span> is two halves of one story: a novel that walks her to the fence and stops — and a top-down stealth game that is the night she goes back in, crossing the building she used to run to recover the only proof she ever existed.</p>
-  </div>
-</div></section>
+<article class="jacket">
+  <div class="spine"></div><span class="hole t"></span><span class="hole b"></span><span class="thread"></span><span class="thread b"></span>
+  <span class="runhead mono">FUNO-77 / MV</span>
 
-<!-- KEY ART -->
-<section class="band"><div class="wrap">
-  <span class="slabel">Key art</span>
-  <div class="keyart">
-    <figure><img src="assets/keyart/margaret-keeper.jpg" loading="lazy" alt="Margaret Vane seen from behind at her records desk, walled by stacks of dossiers, a floor-plan pinned above the lamp.">
-      <figcaption><span>The keeper · Margaret at the records desk</span><a href="assets/keyart/margaret-keeper.jpg">Full size ›</a></figcaption></figure>
-    <figure><img src="assets/keyart/cover.jpg" loading="lazy" alt="Cover — Margaret seen from behind through a cab window on a wet 1970s London street, the title struck through.">
-      <figcaption><span>The cover · a novel, a registry file</span><a href="assets/keyart/cover.jpg">Full size ›</a></figcaption></figure>
-  </div>
-</div></section>
-
-<!-- TRAILER — HELD until public launch / after the FGS premiere. To restore, uncomment this whole section:
-<section class="band" id="trailer"><div class="wrap">
-  <span class="slabel">Trailer</span>
-  <div class="embed">
-    <iframe src="https://www.youtube-nocookie.com/embed/DFX2cpxc_LQ?rel=0&amp;modestbranding=1" title="Filed Under No One — launch trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <p class="embed-note">80 seconds, 1080p, procedural score. <a href="https://youtu.be/DFX2cpxc_LQ" class="sig">Open on YouTube &rsaquo;</a></p>
-</div></section>
--->
-
-
-<!-- FACT SHEET -->
-<section class="band"><div class="wrap">
-  <span class="slabel">Fact sheet</span>
-  <div class="facts">
-    <div class="fact"><div class="k">Developer</div><div class="v">DS Laboratory — a one-person studio, London</div></div>
-    <div class="fact"><div class="k">Release</div><div class="v">2026 · live now</div></div>
-    <div class="fact"><div class="k">Platform</div><div class="v">Web browser (desktop) · keyboard + gamepad</div></div>
-    <div class="fact"><div class="k">Price</div><div class="v">Free</div></div>
-    <div class="fact"><div class="k">Genre</div><div class="v">Top-down stealth · spy fiction · transmedia</div></div>
-    <div class="fact"><div class="k">Engine</div><div class="v"><em>lockstep</em> — own, zero-dependency, deterministic</div></div>
-    <div class="fact"><div class="k">Content</div><div class="v">3-act campaign (≈20 levels) + 14 field exercises</div></div>
-    <div class="fact"><div class="k">Languages</div><div class="v">English</div></div>
-    <div class="fact"><div class="k">Play / read / source</div><div class="v"><a href="../game/play/">Play ›</a> · <a href="../book/">Book ›</a> · <a href="https://github.com/DSLaboratory">GitHub ›</a></div></div>
-  </div>
-</div></section>
-
-<!-- SCREENSHOTS -->
-<section class="band"><div class="wrap">
-  <span class="slabel">Screenshots</span>
-  <div class="shots">
-    <figure class="shot big"><img src="assets/shots/fx-the-compound-calm-thread.jpg" loading="lazy" alt="A large L-shaped floor of dark corridors crossed by olive guard cones; the player threads the gaps."><figcaption>Calm · thread the cones</figcaption></figure>
-    <figure class="shot med"><img src="assets/shots/fx-cold-vault-alert.jpg" loading="lazy" alt="A red alert cone falls on the player; ALERT on the HUD."><figcaption>Alert · seen in full light</figcaption></figure>
-    <figure class="shot third"><img src="assets/shots/fx-orientation-calm-cone-thread.jpg" loading="lazy" alt="A single patrol cone sweeps an early corridor; the player waits just outside it."><figcaption>Read a vision cone</figcaption></figure>
-    <figure class="shot third"><img src="assets/shots/fx-bait-investigate.jpg" loading="lazy" alt="A guard turns toward a noise, an orange question mark above him."><figcaption>Suspicious · a head turns</figcaption></figure>
-    <figure class="shot third"><img src="assets/shots/fx-two-rooms-knock-lure.jpg" loading="lazy" alt="A knocked crate pulls a guard off his patrol toward the sound."><figcaption>Knock · pull the patrol</figcaption></figure>
-    <figure class="shot third"><img src="assets/shots/fx-the-spine-evasion-sweep.jpg" loading="lazy" alt="Two guards flank a corridor in an evasion sweep; the key sits between them."><figcaption>Evasion · the sweep</figcaption></figure>
-    <figure class="shot third"><img src="assets/shots/fx-serpentine-evasion-sweep.jpg" loading="lazy" alt="A procedurally generated serpentine level under an evasion sweep."><figcaption>Field exercise · procedural</figcaption></figure>
-    <figure class="shot third"><img src="assets/shots/fx-crossfire-hall-caught-alert.jpg" loading="lazy" alt="Two converging cones catch the player in a narrow hall; the alarm is up."><figcaption>Caught · the floor goes loud</figcaption></figure>
-  </div>
-  <p class="embed-note">Eight field-exercise levels · live gameplay · 1920×1080 · clean render (no grade).</p>
-</div></section>
-
-<!-- HOW IT PLAYS -->
-<section class="band"><div class="wrap">
-  <span class="slabel">How it plays</span>
-  <h2 class="h2">Pure stealth. No combat, no weapons, no health bar.</h2>
-  <div class="mech">
-    <div class="m"><h4>Light is the whole game</h4><p>Guards see in hard <span class="sig">wedges of light</span> that sweep the floor, line-of-sight checked tile by tile. Corners block sight. To win, you simply are never seen.</p></div>
-    <div class="m"><h4>The shadow rule</h4><p>Step onto a shadow tile and a guard staring straight at you cannot see you. Binary, legible, ruthless.</p></div>
-    <div class="m"><h4>One detection meter</h4><p>It fills in under a second of unbroken sight and drains the instant you break it. Fill it and you're taken — no second chances.</p></div>
-    <div class="m"><h4>Sound vs sight</h4><p>Sound only ever sends a guard to <em>look</em>; only being <span class="sig">seen</span> raises the alarm. Run and you're fast — and loud. Sneak and you leave nothing.</p></div>
-    <div class="m"><h4>Tools of the trade</h4><p>Lure a patrol with a deliberate <span class="sig">knock</span>. Read a corner radar of guard facings — until you go loud and it dissolves into static.</p></div>
-    <div class="m"><h4>Controls</h4><p>Arrows / WASD, run on Shift, action on Space / Z. Full keyboard rebinding; gamepad supported.</p></div>
-  </div>
-  <div class="ladder">
-    <div class="rung"><div class="tag c-calm"><span class="dot"></span> Calm</div><p>The patrol keeps its pattern. You are a rumour the building doesn't believe.</p></div>
-    <div class="rung"><div class="tag c-susp"><span class="dot"></span> Suspicious</div><p>A cone clipped you; a head turns. One held breath to stop being there.</p></div>
-    <div class="rung"><div class="tag c-hunt"><span class="dot"></span> Hunting</div><p>Seen in full light. The floor goes loud — and it knows the dark too.</p></div>
-  </div>
-</div></section>
-
-<!-- WORLD & CHARACTERS -->
-<section class="band"><div class="wrap">
-  <span class="slabel">World &amp; characters</span>
-  <div class="chars">
-    <div class="char"><h4>Margaret Vane</h4><p>Twenty-seven; eleven years at the records desk. She maps the blind spots of others for a living and never once turned the lamp on her own. <span class="sig">Her face is never shown</span> in the trailer, the art, or this kit — the work sells the question of who she is now, not a portrait.</p></div>
-    <div class="char"><h4>The Director</h4><p>The one figure who never leaves his post, who still watches his own door in the dark at the end of the last night — the only man who would know her if he turned around. <span class="sig">The game never shows you whether he does.</span></p></div>
-  </div>
-  <p class="body">A legacy paper basement under a present-day building of screens and keycards. Institutional spy fiction in the le Carré tradition, where the most dangerous object in the room is a rubber stamp.</p>
-</div></section>
-
-<!-- SOUND & LOOK -->
-<section class="band"><div class="wrap">
-  <div class="two">
-    <div>
-      <span class="slabel">Sound</span>
-      <h2 class="h2">Entirely procedural — even the music.</h2>
-      <p class="body">No audio files — every sound is synthesised live in code. The main menu has its own music, a cinematic drone-bed; then the floor itself plays in silence, where sound marks change: papery footsteps, a rising "?" chirp and a two-voice "!" stab panned toward the guard who made them, and a <span class="sig">heartbeat tempo-locked to the detection meter</span> — 60 to 180 BPM as capture nears, silent the instant you're safe.</p>
+  <!-- FILE JACKET HERO -->
+  <header class="hero">
+    <h1 class="wm">FILED UNDER<br><span class="one">NO ONE</span></h1>
+    <p class="hook">The book stops at the fence. The game is the night it won't narrate.</p>
+    <span class="stamp">Struck from the record</span>
+    <div class="fhead">
+      <div class="row"><span class="k mono">Classification</span><span class="v mono">Open · for press</span></div>
+      <div class="row"><span class="k mono">Status</span><span class="v mono">Released · 2026</span></div>
+      <div class="row"><span class="k mono">Price</span><span class="v free mono">Free — no account</span></div>
+      <div class="row"><span class="k mono">Format</span><span class="v mono">Plays in browser</span></div>
     </div>
-    <div>
-      <span class="slabel">Look</span>
-      <h2 class="h2">Drawn in code, in the playfield.</h2>
-      <p class="body">No textures, no sprite sheets, no loaded images in the playfield — every wall, cone, shadow, and character is rendered live from Canvas 2D primitives, the player and guards hand-pixelled pixel by pixel. The austerity is the point: dark grids, pale cones, true-black shadow, and one rationed amber signal — of a piece with the novel's cover. <span class="sig">The form is the theme.</span></p>
+  </header>
+
+  <!-- TAB 01 SUMMARY -->
+  <div class="tab"><h2 class="lab mono">Tab 01 · Summary</h2></div>
+  <section class="sec">
+    <p class="prose">For eleven years, Margaret Vane sat at a government records desk and decided what the country was allowed to see — and, more quietly, what could go unwatched. She drew the blind spots herself. Then she reported a ledger she was never meant to read, and by morning she had been struck from every register that ever held her name.</p>
+    <p class="prose"><span class="sig">Filed Under No One</span> is two halves of one story: a novel that walks her to the fence and stops — and a top-down stealth game that is the night she goes back in, crossing the building she used to run to recover the only proof she ever existed.</p>
+  </section>
+</article>
+
+<div class="pq"><p>She kept the country's secrets. The country kept one — <span class="sig">about her.</span></p></div>
+
+<article class="jacket">
+  <div class="spine"></div><span class="hole t"></span><span class="hole b"></span><span class="thread"></span><span class="thread b"></span>
+  <span class="runhead mono">FUNO-77 / MV</span>
+
+  <!-- TAB 02 THE SUBJECT -->
+  <div class="tab"><h2 class="lab mono">Tab 02 · The Subject</h2></div>
+  <section class="sec">
+    <div class="subject">
+      <div class="subj">
+        <h3>Margaret Vane</h3>
+        <p>Twenty-seven; eleven years at the records desk. She maps the blind spots of others and never once turned the lamp on her own.</p>
+        <div class="redact mono" role="img" aria-label="Redaction bar standing in for the subject's withheld photograph — identity withheld">Identity withheld</div>
+        <div class="redcap mono">Photographed from behind. She is never shown facing the room.</div>
+      </div>
+      <div class="subj">
+        <h3>The Director</h3>
+        <p>The one figure who never leaves his post, who still watches his own door in the dark at the end of the last night — the only man who would know her if he turned around. The game never shows you whether he does.</p>
+      </div>
     </div>
-  </div>
-</div></section>
+    <p class="prose" style="margin-top:24px">The novel walks her to the fence and lays down its pen. The game is the chapter the file refuses to write — playable.</p>
+    <div class="links">
+      <a href="../game/play/">Play the game free <span aria-hidden="true">▸</span></a>
+      <a href="../book/">Read the novel free <span aria-hidden="true">▸</span></a>
+    </div>
+  </section>
+</article>
 
-<!-- CREATIVITY -->
-<section class="band"><div class="wrap">
-  <span class="slabel">What makes it different</span>
-  <h2 class="h2">One story, two media, told without contradiction.</h2>
-  <p class="body">The novel and the game are a single artefact — the game is the climax the book deliberately won't narrate; finish the night, read where it came from, in the same browser. A stealth game with no combat, its whole playfield drawn in code, whose form <em>is</em> its theme: surveillance and erasure rendered as light, shadow, and a held breath. Built on a hand-written, fully deterministic engine with zero runtime dependencies — every run a tape you can replay exactly. And you play the system's victim, slipping through the very blind spots she designed.</p>
-</div></section>
+<!-- EXHIBIT PLATE: the keeper -->
+<figure class="plate">
+  <img src="assets/keyart/margaret-keeper.jpg" width="1376" height="768" fetchpriority="high" decoding="async" alt="Margaret Vane from behind at her records desk, walled by stacks of dossiers, a floor-plan pinned above the lamp.">
+  <figcaption class="cap mono"><b>The keeper.</b> Margaret at the records desk — the floor-plan above the lamp is a level you will cross.</figcaption>
+</figure>
 
-<!-- TAGLINES -->
-<section class="band"><div class="wrap">
-  <span class="slabel">Pull-quotes &amp; taglines</span>
-  <div class="quotes">
-    <div class="q">She kept the country's secrets. The country kept one — <span class="sig">about her.</span></div>
-    <div class="q">Stay in the dark and you are a rumour.</div>
-    <div class="q">Erased on paper. Returning in person.</div>
-    <div class="q">The most dangerous thing in the building is a rubber stamp.</div>
-  </div>
-</div></section>
+<div class="pq"><p>Stay in the dark and you are a <span class="sig">rumour.</span></p></div>
 
-<!-- ABOUT DEV -->
-<section class="band"><div class="wrap">
-  <span class="slabel">Who made it</span>
-  <p class="body">DS Laboratory is a one-person studio in London. <span class="sig">Filed Under No One</span> — its engine, its prose, its levels — was designed, written, and directed to one standard by one person, David Silva, with AI carrying out much of the execution under that direction. The studio states this plainly: the decisions, the testing, and the bar are one author's.</p>
-</div></section>
+<article class="jacket">
+  <div class="spine"></div><span class="hole t"></span><span class="hole b"></span><span class="thread"></span><span class="thread b"></span>
+  <span class="runhead mono">FUNO-77 / MV</span>
 
-<!-- ASSETS / LINKS -->
-<section class="band" id="assets"><div class="wrap">
-  <span class="slabel">Links &amp; assets</span>
-  <h2 class="h2">Everything press &amp; juries need.</h2>
-  <div class="dl">
-    <!-- Trailer tile HELD until premiere: <a class="d" href="https://youtu.be/DFX2cpxc_LQ"><div class="t">Trailer</div><div class="s">80s, 1080p, YouTube</div><span class="a">Watch</span></a> -->
-    <a class="d" href="assets/filed-under-no-one-screenshots.zip" download><div class="t">Screenshots</div><div class="s">8 levels · 1920×1080 · .zip · 633&nbsp;KB</div><span class="a">Download ›</span></a>
-    <a class="d" href="assets/filed-under-no-one-keyart.zip" download><div class="t">Key art</div><div class="s">Cover (3000×4500) + 3 stills · .zip · 11&nbsp;MB</div><span class="a">Download ›</span></a>
-    <a class="d" href="assets/filed-under-no-one-press-copy.txt" download><div class="t">Press copy</div><div class="s">Fact sheet · pitches · taglines · .txt</div><span class="a">Download ›</span></a>
-    <a class="d" href="../game/play/"><div class="t">Play the game</div><div class="s">Free · in your browser</div><span class="a">Open ›</span></a>
-    <a class="d" href="../book/"><div class="t">Read the novel</div><div class="s">Free · same browser</div><span class="a">Read ›</span></a>
-    <a class="d" href="https://github.com/DSLaboratory"><div class="t">Source</div><div class="s">The studio on GitHub</div><span class="a">Open ›</span></a>
-  </div>
-</div></section>
+  <!-- TAB 03 EXHIBITS -->
+  <div class="tab"><h2 class="lab mono">Tab 03 · Exhibits — gameplay</h2></div>
+  <section class="sec">
+    <div class="exs">
+      <figure class="ex"><img src="assets/shots/fx-the-compound-calm-thread.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Dark corridors crossed by olive guard cones."><div class="m mono"><b>EX.1</b><span>Calm · thread the cones</span></div></figure>
+      <figure class="ex"><img src="assets/shots/fx-cold-vault-alert.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="A red alert cone falls on the player."><div class="m mono"><b>EX.2</b><span>Alert · seen in full light</span></div></figure>
+      <figure class="ex"><img src="assets/shots/fx-bait-investigate.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="A guard turns toward a noise, a question mark above him."><div class="m mono"><b>EX.3</b><span>Suspicious · a head turns</span></div></figure>
+      <figure class="ex"><img src="assets/shots/fx-two-rooms-knock-lure.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="A knocked crate pulls a guard toward the sound."><div class="m mono"><b>EX.4</b><span>Knock · pull the patrol</span></div></figure>
+      <figure class="ex"><img src="assets/shots/fx-the-spine-evasion-sweep.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Two guards flank a corridor in an evasion sweep."><div class="m mono"><b>EX.5</b><span>Evasion · the sweep</span></div></figure>
+      <figure class="ex"><img src="assets/shots/fx-orientation-calm-cone-thread.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="A single patrol cone sweeps an early corridor."><div class="m mono"><b>EX.6</b><span>Read a vision cone</span></div></figure>
+    </div>
+  </section>
 
-<!-- CONTACT -->
-<section class="band contact"><div class="wrap">
-  <span class="slabel">Press contact</span>
-  <h2 class="h2">Reach me on X.</h2>
-  <p class="body" style="margin-bottom:14px">Review access, interviews, assets, or questions — DMs are open. No email; X is the contact.</p>
-  <a class="handle" href="https://x.com/davidslv">@davidslv</a>
-  <p class="body" style="margin-top:18px">DS Laboratory · London · <a href="https://dslaboratory.uk" class="sig">dslaboratory.uk</a></p>
-</div></section>
+  <!-- TAB 04 OPERATION -->
+  <div class="tab"><h2 class="lab mono">Tab 04 · Operation — how it plays</h2></div>
+  <section class="sec">
+    <p class="prose" style="margin-bottom:8px">Pure stealth. No combat, no weapons, no health bar.</p>
+    <div class="minutes">
+      <div class="r"><span class="s mono">01</span><span class="t"><b>Light is the whole game.</b> Guards see in hard wedges of light, line-of-sight checked tile by tile; corners block sight. To win, you are simply never seen.</span></div>
+      <div class="r"><span class="s mono">02</span><span class="t"><b>The shadow rule.</b> Step onto a shadow tile and a guard staring straight at you cannot see you. Binary, legible, ruthless.</span></div>
+      <div class="r"><span class="s mono">03</span><span class="t"><b>One detection meter.</b> It fills in under a second of unbroken sight and drains the instant you break it. Fill it and you're taken — no second chances.</span></div>
+      <div class="r"><span class="s mono">04</span><span class="t"><b>Sound vs sight.</b> Sound only ever sends a guard to look; only being seen raises the alarm. A knock lures a patrol; a careless run gives you away.</span></div>
+    </div>
+    <p class="statuskey mono"><b>CALM</b> — the patrol keeps its pattern. &nbsp; <b>SUSPICIOUS</b> — a cone clipped you; a head turns. &nbsp; <b>HUNTING</b> — seen in full light; the floor goes loud, and it knows the dark too.</p>
+  </section>
+
+  <!-- TAB 05 ON THE RECORD -->
+  <div class="tab"><h2 class="lab mono">Tab 05 · On the record — sound &amp; look</h2></div>
+  <section class="sec">
+    <div class="twoup">
+      <div><h3>Sound</h3><p>Entirely procedural — every sound synthesised live in code, even the menu music. The floor plays in silence; sound marks change — papery footsteps, a rising "?" chirp, a two-voice "!" stab, and a heartbeat tempo-locked to the detection meter.</p></div>
+      <div><h3>Look</h3><p>Drawn in code, in the playfield: no textures, no sprite sheets, no loaded images. Dark grids, pale cones, true-black shadow, one rationed amber signal — of a piece with the novel's cover. The form is the theme.</p></div>
+    </div>
+  </section>
+</article>
+
+<div class="pq"><p>Erased on paper. <span class="sig">Returning in person.</span></p></div>
+
+<!-- EXHIBIT PLATE: the handler -->
+<figure class="plate">
+  <img src="assets/keyart/duval.jpg" width="848" height="1264" loading="lazy" decoding="async" alt="A heavy grey-suited man walking away down a strip-lit corridor, two cups in hand." style="max-height:min(86vh,720px)">
+  <figcaption class="cap mono"><b>The handler.</b> The only man who would know her if he turned around.</figcaption>
+</figure>
+
+<article class="jacket">
+  <div class="spine"></div><span class="hole t"></span><span class="hole b"></span><span class="thread"></span><span class="thread b"></span>
+  <span class="runhead mono">FUNO-77 / MV</span>
+
+  <!-- TAB 06 MINUTE SHEET (fact sheet) -->
+  <div class="tab"><h2 class="lab mono">Tab 06 · Minute sheet — the facts</h2></div>
+  <section class="sec">
+    <div class="fs">
+      <div class="r"><span class="k mono">Developer</span><span class="v">DS Laboratory — a one-person studio, London</span></div>
+      <div class="r"><span class="k mono">Release</span><span class="v">2026 · live now</span></div>
+      <div class="r"><span class="k mono">Platform</span><span class="v">Web browser (desktop) · keyboard + gamepad</span></div>
+      <div class="r"><span class="k mono">Price</span><span class="v">Free · no install · no account</span></div>
+      <div class="r"><span class="k mono">Genre</span><span class="v">Top-down stealth · spy fiction · transmedia</span></div>
+      <div class="r"><span class="k mono">Engine</span><span class="v"><em>lockstep</em> — own, zero-dependency, deterministic</span></div>
+      <div class="r"><span class="k mono">Content</span><span class="v">3-act campaign (≈20 levels) + 14 field exercises</span></div>
+      <div class="r"><span class="k mono">Play / read / studio</span><span class="v"><a href="../game/play/">Play ›</a> &nbsp; <a href="../book/">Book ›</a> &nbsp; <a href="https://github.com/DSLaboratory">GitHub ›</a></span></div>
+    </div>
+    <p class="prose" style="margin-top:22px;max-width:58ch">DS Laboratory is a one-person studio in London. <em>Filed Under No One</em> — its engine, its prose, its levels — was designed, written, and directed to one standard by one person, David Silva, with AI carrying out much of the execution under that direction. The studio states this plainly: the decisions, the testing, and the bar are one author's.</p>
+  </section>
+
+  <!-- TAB 07 ENCLOSURES -->
+  <div class="tab" id="enclosures"><h2 class="lab mono">Tab 07 · Enclosures</h2></div>
+  <section class="sec">
+    <div class="enc">
+      <a href="assets/filed-under-no-one-screenshots.zip" download><span class="id mono">ENC.A</span><span class="t">Screenshots — 8 levels</span><span class="s mono">1920×1080 · .zip · 633 KB</span><span class="go mono">Download ›</span></a>
+      <a href="assets/filed-under-no-one-keyart.zip" download><span class="id mono">ENC.B</span><span class="t">Key art — cover + stills</span><span class="s mono">cover 3000×4500 + 3 stills · .zip · 11 MB</span><span class="go mono">Download ›</span></a>
+      <a href="assets/filed-under-no-one-press-copy.txt" download><span class="id mono">ENC.C</span><span class="t">Press copy</span><span class="s mono">fact sheet · pitches · .txt</span><span class="go mono">Download ›</span></a>
+      <a href="../game/play/"><span class="id mono">—</span><span class="t">Play the game</span><span class="s mono">free · in your browser</span><span class="go mono">Open ›</span></a>
+      <a href="../book/"><span class="id mono">—</span><span class="t">Read the novel</span><span class="s mono">free · same browser</span><span class="go mono">Read ›</span></a>
+    </div>
+  </section>
+</article>
+
 </main>
 
-<footer><div class="wrap"><div class="foot">
-  <div>
-    <span class="logo"><span class="l1">Filed Under</span><span class="l2">No One</span></span>
-    <div class="colo" style="margin-top:12px">Struck from the record. Retained indefinitely.</div>
-  </div>
-  <div style="text-align:right">
-    <div class="colo">A DS Laboratory work · MMXXVI</div>
-    <a class="studio" href="https://dslaboratory.uk">dslaboratory.uk</a>
-  </div>
-</div></div></footer>
+<!-- CODA -->
+<section class="coda">
+  <div class="k mono">Press contact</div>
+  <div class="h">Reach me on X.</div>
+  <a class="x" href="https://x.com/davidslv">@davidslv</a>
+  <div class="ref mono">No email · DS Laboratory · London · A DS Laboratory work · MMXXVI<br>Struck from the record. Retained indefinitely.</div>
+</section>
+
 </body>
 </html>
