@@ -37,17 +37,20 @@
   "publisher":{"@type":"Organization","@id":"https://dslaboratory.uk/#org","name":"DS Laboratory"},
   "inLanguage":"en",
   "genre":"Spy fiction",
-  "bookFormat":["https://schema.org/Paperback","https://schema.org/EBook"],
   "isAccessibleForFree":true,
   "image":"https://filedundernoone.uk/book/img/og-book.jpg",
   "description":"A novel of institutional dread in the le Carré tradition — free to read online, in full, or own it in paperback and e-book on Amazon.",
-  "offers":[
-    {"@type":"Offer","url":"https://www.amazon.co.uk/dp/1066649448","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","areaServed":"GB"},
-    {"@type":"Offer","url":"https://www.amazon.co.uk/dp/B0H5SF9K3B","availability":"https://schema.org/InStock","areaServed":"GB"},
-    {"@type":"Offer","url":"https://www.amazon.com/dp/1066649448","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","areaServed":"US"},
-    {"@type":"Offer","url":"https://www.amazon.com/dp/B0H5SF9K3B","availability":"https://schema.org/InStock","areaServed":"US"}
-  ],
   "potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","urlTemplate":"https://filedundernoone.uk/book/"}},
+  "workExample":[
+    {"@type":"Book","@id":"https://filedundernoone.uk/#book-paperback","bookFormat":"https://schema.org/Paperback","isbn":"9781066649440","inLanguage":"en","datePublished":"2026","author":{"@id":"https://filedundernoone.uk/#author"},"publisher":{"@id":"https://dslaboratory.uk/#org"},"offers":[
+      {"@type":"Offer","url":"https://www.amazon.co.uk/dp/1066649448","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","areaServed":"GB"},
+      {"@type":"Offer","url":"https://www.amazon.com/dp/1066649448","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","areaServed":"US"}
+    ]},
+    {"@type":"Book","@id":"https://filedundernoone.uk/#book-ebook","bookFormat":"https://schema.org/EBook","inLanguage":"en","datePublished":"2026","author":{"@id":"https://filedundernoone.uk/#author"},"publisher":{"@id":"https://dslaboratory.uk/#org"},"offers":[
+      {"@type":"Offer","url":"https://www.amazon.co.uk/dp/B0H5SF9K3B","availability":"https://schema.org/InStock","areaServed":"GB"},
+      {"@type":"Offer","url":"https://www.amazon.com/dp/B0H5SF9K3B","availability":"https://schema.org/InStock","areaServed":"US"}
+    ]}
+  ],
   "hasPart":[
     {"@type":"Chapter","name":"The Method of Forgetting","url":"https://filedundernoone.uk/book/01-the-method-of-forgetting.html","position":1},
     {"@type":"Chapter","name":"Duval","url":"https://filedundernoone.uk/book/02-duval.html","position":2},

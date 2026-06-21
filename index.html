@@ -205,19 +205,41 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line)}
       "image": "https://filedundernoone.uk/img/og-card.jpg",
       "genre": "Spy fiction",
       "inLanguage": "en",
-      "bookFormat": ["https://schema.org/Paperback", "https://schema.org/EBook"],
       "author": { "@id": "https://filedundernoone.uk/#author" },
       "publisher": { "@id": "https://dslaboratory.uk/#org" },
       "abstract": "For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see — then found a ledger that files the living as dead. She reported it. By morning she had never existed.",
       "description": "A novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp. Free to read online, in full — also in paperback and e-book on Amazon.",
       "isAccessibleForFree": true,
-      "offers": [
-        { "@type": "Offer", "url": "https://www.amazon.co.uk/dp/1066649448", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "areaServed": "GB" },
-        { "@type": "Offer", "url": "https://www.amazon.co.uk/dp/B0H5SF9K3B", "availability": "https://schema.org/InStock", "areaServed": "GB" },
-        { "@type": "Offer", "url": "https://www.amazon.com/dp/1066649448", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "areaServed": "US" },
-        { "@type": "Offer", "url": "https://www.amazon.com/dp/B0H5SF9K3B", "availability": "https://schema.org/InStock", "areaServed": "US" }
-      ],
-      "potentialAction": { "@type": "ReadAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://filedundernoone.uk/book/" } }
+      "potentialAction": { "@type": "ReadAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://filedundernoone.uk/book/" } },
+      "workExample": [
+        {
+          "@type": "Book",
+          "@id": "https://filedundernoone.uk/#book-paperback",
+          "bookFormat": "https://schema.org/Paperback",
+          "isbn": "9781066649440",
+          "inLanguage": "en",
+          "datePublished": "2026",
+          "author": { "@id": "https://filedundernoone.uk/#author" },
+          "publisher": { "@id": "https://dslaboratory.uk/#org" },
+          "offers": [
+            { "@type": "Offer", "url": "https://www.amazon.co.uk/dp/1066649448", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "areaServed": "GB" },
+            { "@type": "Offer", "url": "https://www.amazon.com/dp/1066649448", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "areaServed": "US" }
+          ]
+        },
+        {
+          "@type": "Book",
+          "@id": "https://filedundernoone.uk/#book-ebook",
+          "bookFormat": "https://schema.org/EBook",
+          "inLanguage": "en",
+          "datePublished": "2026",
+          "author": { "@id": "https://filedundernoone.uk/#author" },
+          "publisher": { "@id": "https://dslaboratory.uk/#org" },
+          "offers": [
+            { "@type": "Offer", "url": "https://www.amazon.co.uk/dp/B0H5SF9K3B", "availability": "https://schema.org/InStock", "areaServed": "GB" },
+            { "@type": "Offer", "url": "https://www.amazon.com/dp/B0H5SF9K3B", "availability": "https://schema.org/InStock", "areaServed": "US" }
+          ]
+        }
+      ]
     },
     {
       "@type": "VideoGame",
