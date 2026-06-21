@@ -33,8 +33,8 @@
   "@id":"https://filedundernoone.uk/#book",
   "name":"Filed Under No One",
   "url":"https://filedundernoone.uk/book/",
-  "author":{"@type":"Person","name":"David Silva","url":"https://dslaboratory.uk/"},
-  "publisher":{"@type":"Organization","name":"DS Laboratory"},
+  "author":{"@type":"Person","@id":"https://filedundernoone.uk/#author","name":"David Silva","url":"https://dslaboratory.uk/"},
+  "publisher":{"@type":"Organization","@id":"https://dslaboratory.uk/#org","name":"DS Laboratory"},
   "inLanguage":"en",
   "genre":"Spy fiction",
   "bookFormat":["https://schema.org/Paperback","https://schema.org/EBook"],
@@ -121,7 +121,7 @@
   <p class="gamelink">A free companion stealth game continues the story — <a href="https://filedundernoone.uk/game/">the night she goes back in &rarr;</a></p>
 </article>
 </main>
-<footer class="foot"><p>Filed Under No One · a novel by David Silva · <span class="mono">a DS Laboratory work · MMXXVI</span></p></footer>
+<footer class="foot"><p>Filed Under No One · a novel by David Silva · <span class="mono">a DS Laboratory work · MMXXVI</span> · <a href="/press/">Press kit</a></p></footer>
 <div class="grain" aria-hidden="true"></div>
 <script>(function(){var b=document.querySelector('.toggle'),h=document.documentElement;function set(m){h.setAttribute('data-mode',m);try{localStorage.setItem('funo-mode',m);}catch(e){}var p=m==='paper';b.setAttribute('aria-pressed',String(p));b.setAttribute('aria-label','Switch to '+(p?'dark':'paper')+' reading mode');b.querySelector('.tlabel').textContent=p?'Dark':'Paper';}b.addEventListener('click',function(){set(h.getAttribute('data-mode')==='paper'?'dark':'paper');});set(h.getAttribute('data-mode')||'dark');})();</script>
 </body>
