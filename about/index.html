@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Filed Under No One — free spy novel & stealth game</title>
+<meta name="description" content="What Filed Under No One is — a free le Carré-style spy novel and its companion browser stealth game — how the two fit together, and answers to common questions: is it really free, how to read it, how to play.">
+<link rel="canonical" href="https://filedundernoone.uk/about/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="David Silva">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Filed Under No One">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://filedundernoone.uk/about/">
+<meta property="og:title" content="About Filed Under No One — free spy novel & stealth game">
+<meta property="og:description" content="A free le Carré-tradition spy novel and its companion browser stealth game — what it is, how the book and game fit together, and answers to common questions.">
+<meta property="og:image" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta property="og:image:secure_url" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FILED UNDER NO ONE — the struck wordmark over a surveillance photograph.">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Filed Under No One — free spy novel & stealth game">
+<meta name="twitter:description" content="A free le Carré-tradition spy novel and its companion browser stealth game — what it is and how to start.">
+<meta name="twitter:image" content="https://filedundernoone.uk/img/og-card.jpg">
+<meta name="twitter:image:alt" content="FILED UNDER NO ONE — the struck wordmark over a surveillance photograph.">
+
+<!-- Icons & theme -->
+<meta name="theme-color" content="#04060b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+@font-face{font-family:'Bric';font-weight:100 900;font-display:swap;src:url(../fonts/BricolageGrotesque.woff2) format('woff2')}
+@font-face{font-family:'Registry';font-weight:300 700;font-display:swap;src:url(../fonts/SplineSansMono.woff2) format('woff2')}
+:root{
+  --void:#04060b; --void2:#070a12; --panel:#0a0f1c; --panel2:#0d1322;
+  --ink:#eef2fb; --ink2:#aeb9d6; --meta:#828fbb; --steel-ink:#8e9ec4;
+  --signal:#ffc31f; --signal-hot:#ffe07a; --line:rgba(150,170,220,.14);
+  --max:760px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Bric',sans-serif;font-weight:500;color:var(--ink2);background:var(--void);line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(78% 38% at 50% -4%,rgba(255,195,31,.06),transparent 60%)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.mono{font-family:'Registry',ui-monospace,monospace}
+.sig{color:var(--signal)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+/* grain */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.4;mix-blend-mode:multiply;
+  background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
+.skip{position:absolute;left:-9999px;top:0;z-index:60}
+.skip:focus{left:12px;top:10px;background:var(--void);color:var(--signal);font-family:'Registry';font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border:1px solid var(--signal)}
+/* top bar */
+.bar{position:sticky;top:0;z-index:40;display:flex;justify-content:space-between;align-items:center;gap:18px;
+  padding:13px 26px;background:rgba(4,6,11,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:'Bric';font-weight:800;text-transform:uppercase;line-height:.86;letter-spacing:-.015em;display:inline-block;font-size:20px}
+.logo .l1{display:block;color:var(--steel-ink);font-size:.42em;font-weight:600;letter-spacing:.26em;margin-bottom:.25em}
+.logo .l2{position:relative;display:inline-block;color:var(--ink)}
+.logo .l2::after{content:"";position:absolute;left:-2%;right:-2%;top:54%;height:.07em;background:var(--signal);box-shadow:0 0 14px rgba(255,195,31,.5);transform:rotate(-1.4deg)}
+.bar nav{display:flex;gap:20px;font-family:'Registry';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--meta)}
+.bar nav a{display:inline-flex;align-items:center;min-height:40px;transition:color .2s}
+.bar nav a:hover{color:var(--signal)}
+@media(max-width:560px){.bar nav a.hideable{display:none}}
+/* head */
+.head{padding:11vh 0 7vh;border-bottom:1px solid var(--line)}
+.kick{font-family:'Registry';font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--meta);font-size:.72rem}
+.head h1{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(2.1rem,6.5vw,3.4rem);line-height:1;letter-spacing:-.02em;color:var(--ink);margin:18px 0 0}
+.head .stand{font-size:clamp(1.1rem,2.4vw,1.4rem);color:var(--ink);max-width:34ch;margin-top:24px;line-height:1.5;font-weight:500}
+/* sections */
+section{padding:7vh 0;border-bottom:1px solid var(--line)}
+h2{font-family:'Bric';font-weight:800;text-transform:uppercase;font-size:clamp(1.25rem,3vw,1.7rem);color:var(--ink);letter-spacing:-.01em;margin-bottom:22px}
+h3{font-family:'Bric';font-weight:700;color:var(--ink);font-size:1.05rem;margin:0 0 8px}
+p{font-size:1.06rem;color:#c2cad9;max-width:64ch;margin-top:0}
+p + p{margin-top:16px}
+.lead-p{font-size:clamp(1.1rem,1.8vw,1.18rem);color:#d4dbe9}
+.comps{list-style:none;margin-top:6px;display:flex;flex-direction:column;gap:14px}
+.comps li{padding-left:18px;border-left:2px solid rgba(255,195,31,.45);max-width:60ch;font-size:1.02rem;color:#c2cad9}
+.comps b{color:var(--ink);font-weight:700}
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:26px}
+.faq .q{max-width:64ch}
+.faq .q p{margin-top:0;color:#bcc6d6;font-size:1.02rem}
+.faq .q a{color:var(--signal-hot);text-decoration:underline;text-underline-offset:3px}
+/* CTA row */
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.btn{font-family:'Bric';font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.82rem;
+  padding:14px 24px;border-radius:2px;border:1px solid var(--line);display:inline-flex;align-items:center;gap:9px;transition:.25s}
+.btn.read{background:var(--signal);color:#0a0a0a;border-color:var(--signal)}
+.btn.read:hover{box-shadow:0 0 30px rgba(255,195,31,.35)}
+.btn.ghost{color:var(--ink2)}
+.btn.ghost:hover{border-color:var(--signal);color:var(--signal)}
+/* author */
+.who p{max-width:62ch}
+.who a{color:var(--signal-hot);text-decoration:underline;text-underline-offset:3px}
+/* footer */
+footer{padding:54px 0 76px}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.foot .logo{font-size:22px}
+.foot .colo{font-family:'Registry';font-size:11px;letter-spacing:.1em;color:var(--meta);text-transform:uppercase;margin-top:12px}
+.foot .links{font-family:'Registry';font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-align:right}
+.foot .links a{color:var(--steel-ink);transition:.25s}
+.foot .links a:hover{color:var(--signal)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://filedundernoone.uk/about/#webpage",
+      "url": "https://filedundernoone.uk/about/",
+      "name": "About Filed Under No One",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://filedundernoone.uk/#website" },
+      "about": [
+        { "@id": "https://filedundernoone.uk/#book" },
+        { "@id": "https://filedundernoone.uk/#game" }
+      ],
+      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://filedundernoone.uk/img/og-card.jpg" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://filedundernoone.uk/" },
+        { "@type": "ListItem", "position": 2, "name": "About" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://filedundernoone.uk/about/#faq",
+      "isPartOf": { "@id": "https://filedundernoone.uk/about/#webpage" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the book really free to read?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can read the entire novel free online, in full, with no signup and no account. If you would rather own it, it is also available in paperback and e-book on Amazon." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an account or an app to read it?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It reads in any web browser — nothing to install, no login, no paywall." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Filed Under No One about?",
+          "acceptedAnswer": { "@type": "Answer", "text": "For eleven years Margaret Vane sat at the Registry and decided what the country was allowed to see. Then she found a ledger that files the living as dead. She reported it through the proper channel — and by morning she had never existed. It is a literary spy novel of institutional dread in the le Carré tradition, where the most dangerous object in the room is a rubber stamp." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the game relate to the book?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The novel ends at the threshold; the game is the single night Margaret goes back into the building she once secured, to recover the proof she ever existed. Each stands alone, and you can read or play in either order — together they complete the story." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the game free, and what do I need to play it?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, it is free. It plays in any modern web browser, on desktop or mobile, with no download or install. On desktop you can use a keyboard or a gamepad." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is the game, and how many levels are there?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The story campaign, The File, is 23 hand-built levels across three acts. There are also 14 standalone Field Exercises you can play in any order." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there any combat?",
+          "acceptedAnswer": { "@type": "Answer", "text": "None. It is pure stealth — light, shadow, patrol routes and patience. No weapons, no fighting; the only way through is not to be seen." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who made Filed Under No One?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It was written and built by David Silva under DS Laboratory, an independent studio making owned, deterministic, offline-first software and stories." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="bar">
+  <a class="logo" href="/" aria-label="Filed Under No One — home"><span class="l1">Filed Under</span><span class="l2">No&nbsp;One</span></a>
+  <nav aria-label="Primary">
+    <a href="/book/">Read free</a>
+    <a href="/game/">Play</a>
+    <a class="hideable" href="/press/">Press</a>
+  </nav>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+<div class="head">
+  <p class="kick">About</p>
+  <h1>Filed Under No One</h1>
+  <p class="stand">A free spy novel in the le&nbsp;Carré tradition — and the companion stealth game that finishes it.</p>
+</div>
+
+<section aria-label="What it is">
+  <h2>What it is</h2>
+  <p class="lead-p"><span class="sig">Filed Under No One</span> is two things that complete each other: a literary spy novel you can read free online, in full, and a free top-down stealth game that plays in your browser.</p>
+  <p>The novel is institutional dread in the tradition of John le&nbsp;Carré and the British Cold-War thriller — slow-burn, procedural, and quiet, where the most dangerous object in the room is a rubber stamp. The game is the night the story turns: no combat, only light and shadow. You don't need one to enjoy the other, but read and played together they tell the whole of it.</p>
+  <div class="cta-row" style="margin-top:28px">
+    <a class="btn read" href="/book/">Read the book free →</a>
+    <a class="btn ghost" href="/game/">Play the game</a>
+  </div>
+</section>
+
+<section aria-label="The story">
+  <h2>The story</h2>
+  <p>For eleven years, Margaret Vane sat at the Registry and decided what the country was allowed to see. Her work was Coverage — where the cameras pointed, which corridors a stranger could cross unseen, which gaps in the watching were <em>acceptable</em>. She signed off the dark places herself, and she was the best they had ever had at it.</p>
+  <p>Then she found a ledger that files the living as dead — a clean, careful death transacted entirely on paper, for a man who had eaten his breakfast that morning. She did the correct thing. She reported it, through the proper channel, in her own neat hand. By morning she had never existed: struck from the record by the same machinery she had spent her life perfecting.</p>
+  <p>The novel is the eleven weeks that follow — of becoming no one, and of planning the one way back in. The game is that night.</p>
+</section>
+
+<section aria-label="The book and the game">
+  <h2>The book &amp; the game</h2>
+  <p>The book stops at the threshold. The game is the single night Margaret goes back into the building she once secured, to recover the one folder in the dark that proves she was ever real — slipping the blind spots she drew herself.</p>
+  <p>Read it, play it, in whichever order you like. The book is the why; the game is the night. Each stands on its own.</p>
+</section>
+
+<section aria-label="For readers of">
+  <h2>For readers of</h2>
+  <ul class="comps">
+    <li><b>John le&nbsp;Carré</b> — <i>Tinker Tailor Soldier Spy</i>, <i>A Legacy of Spies</i>: tradecraft as paperwork, betrayal as procedure.</li>
+    <li><b>Mick Herron</b> — <i>Slow Horses</i>: the institution as the real antagonist, dry and merciless.</li>
+    <li>The <b>British Cold-War thriller</b> generally — quiet, bureaucratic, more dread than action.</li>
+  </ul>
+  <p style="margin-top:22px">If you like spy fiction where the danger is a signature and a closed file, not a car chase, this is for you — and it costs nothing to start.</p>
+</section>
+
+<section aria-label="Frequently asked questions">
+  <h2>Common questions</h2>
+  <div class="faq">
+    <div class="q"><h3>Is the book really free to read?</h3><p>Yes. You can read the entire novel free online, in full, with no signup and no account. If you'd rather own it, it's also in <a href="https://www.amazon.co.uk/dp/1066649448">paperback</a> and <a href="https://www.amazon.co.uk/dp/B0H5SF9K3B">e-book</a> on Amazon.</p></div>
+    <div class="q"><h3>Do I need an account or an app to read it?</h3><p>No. It reads in any web browser — nothing to install, no login, no paywall.</p></div>
+    <div class="q"><h3>How does the game relate to the book?</h3><p>The novel ends at the threshold; the game is the single night Margaret goes back in. Each stands alone, and you can <a href="/book/">read</a> or <a href="/game/">play</a> in either order — together they complete the story.</p></div>
+    <div class="q"><h3>Is the game free, and what do I need to play it?</h3><p>Yes, free. It plays in any modern browser — desktop or mobile — with no download. On desktop you can use a keyboard or a gamepad.</p></div>
+    <div class="q"><h3>How long is the game, and how many levels are there?</h3><p>The story campaign, <em>The File</em>, is 23 hand-built levels across three acts. There are also 14 standalone <em>Field Exercises</em> you can play in any order.</p></div>
+    <div class="q"><h3>Is there any combat?</h3><p>None. It's pure stealth — light, shadow, patrol routes and patience. No weapons, no fighting; the only way through is not to be seen.</p></div>
+    <div class="q"><h3>Who made it?</h3><p>Written and built by David Silva under <a href="https://dslaboratory.uk/">DS Laboratory</a>, an independent studio making owned, deterministic, offline-first software and stories.</p></div>
+  </div>
+</section>
+
+<section class="who" aria-label="About the author">
+  <h2>The author</h2>
+  <p><b style="color:var(--ink)">David Silva</b> writes and builds under DS Laboratory, an independent studio making owned, deterministic, offline-first software and stories. <i>Filed Under No One</i> — the novel and its companion stealth game — is one work in two forms.</p>
+  <p style="margin-top:14px">Find the books on <a href="https://www.amazon.co.uk/stores/author/B0DWX7G5YK">Amazon</a> · the studio at <a href="https://dslaboratory.uk/">dslaboratory.uk</a> · or the <a href="/press/">press kit</a> for media &amp; assets.</p>
+  <div class="cta-row" style="margin-top:30px">
+    <a class="btn read" href="/book/">Start reading, free →</a>
+    <a class="btn ghost" href="/game/">Play the game</a>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap"><div class="foot">
+  <div>
+    <span class="logo"><span class="l1">Filed Under</span><span class="l2">No&nbsp;One</span></span>
+    <div class="colo">Struck from the record. Retained indefinitely.</div>
+  </div>
+  <div class="links">
+    <div class="colo" style="margin:0 0 8px">A DS Laboratory work · MMXXVI</div>
+    <a href="/book/">Read</a> · <a href="/game/">Play</a> · <a href="/press/">Press</a> · <a href="https://dslaboratory.uk/">Studio</a>
+  </div>
+</div></div>
+</footer>
+<div class="grain" aria-hidden="true"></div>
+</body>
+</html>
